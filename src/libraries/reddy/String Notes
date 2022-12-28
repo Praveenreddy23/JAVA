@@ -21,3 +21,24 @@
     -->String literal Object will get store inside constant pool, and constant pool doesn't allow duplicate.
     -->String Object created using new operator will get store inside non-constant pool, and
          non-constant pool allows duplicate.
+
+--@ How String Object are immutable in nature:->
+    or
+--@ Explain String immutability Concept:->
+   -> When we reinitialize a String object, the existing object not modified,rather than
+      that a new Object get created and the reference variable pointing to the old object gets de-referenced
+      and start pointing to the newly created object. therefore String Object are immutable in nature
+
+--@ Advantage:-> If 2 ref. variables are pointing same string object
+               then changes done on the object through one reference
+                variable will not effect another reference variable.
+
+--@ Disadvantage:-> If you reinitialize same reference variable for n number
+                     of times then it will result in creation of multiple
+                     de-referenced objects which will occupy the memory space
+                     and may lead to OutofMemoryError.
+
+--@To overcome the disadvantage of immutable property java developers
+   created two new classes
+   1) StringBuffer
+   2) StringBuilder

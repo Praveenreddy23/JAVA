@@ -1,5 +1,10 @@
 package libraries.reddy;
-
+/*
+--@hashCode()
+  ->hashCode() method return a unique id or no. for an object.
+  ->hashCode() is used to identify an object uniquely.
+  ->Syntax: public int hashCode()
+ */
 public class HashCodeExample {
     @Override
     public int hashCode() {

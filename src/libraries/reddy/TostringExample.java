@@ -3,7 +3,7 @@ package libraries.reddy;
         ->toString() will return String representation of an Object.
         Syntex:public String toString()
         ->When we print the reference variable or Object reference implicitly toString() gets called.
-        ->toString() will returns the String representation of an Object in the below formate:
+        ->toString() will returns the String representation of an Object in the below format:
         --> FullyQualifiedClass@HexaDecimalvalueOfHAshcode
 
  */
