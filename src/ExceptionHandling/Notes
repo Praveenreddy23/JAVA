@@ -1,0 +1,54 @@
+  --@Exception Handling@--
+                   Object
+                     |
+                  Throwable
+       Error          |          Exception
+                                                  ->Exception
+                       ->RuntimeException                ->SQLException
+                        >ArithmeticException              >ClassNotFoundException
+       unchecked    {   >ArrayIndexOutOfBoundsException   >FileNotFoundException
+       Exception        >ClassCastException               >IoException
+                        >InterpreterException                              (Checked
+                        >NullPointerException                               Exception)
+
+-->ERROR:
+   ->Error is a Runtime interruption which cannot be handled(We have to Debug)
+       -Errors are of 2types
+         1.compilation error -> Syntax Mistake
+         2.Runtime Error -> Execute a class without main()
+
+-->Exception Handling:
+   ->Exception is a event or an interruption which stops the execution of a program.
+       (Below lines of code not get executed)
+   ->Exception is also a Runtime interruption which can be handled.
+   ->The process of handling an Exception is called as Exception handling.
+   ->Exception is handled using Try block and Catch block.
+
+ -->Try and Catch block:
+  ->The critical lines of code which gives an exception should be written inside the try block.
+  ->If there is try block, mandatorily catch block should be present.
+  ->The Solution should always be written the catch block.
+  ->Catch block will be executed only if an exception occurs.
+   Syntax :
+   try
+   {
+      //set of instructions
+   }
+   catch(ExceptionName referenceVariable)
+   {
+     //set of instructions
+   }
+ ->One try block can have any number of catch blocks.
+ ->There should not be any executable lines of code between try and catch block.
+ ->It is always a good practice to handle the superclass exception as the last catch block.
+    Ex:
+       try{
+       System.out.println(10/0);
+       }
+       catch(Exception e)
+       {
+        System.out.println("Super Class Exception Handler");
+       }
+
+
+
