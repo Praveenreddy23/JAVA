@@ -50,5 +50,59 @@
         System.out.println("Super Class Exception Handler");
        }
 
+-->Important methods present in throwable class:
+  1.printstacktrace() : This method is used to get the complete info about the Exception.
+    Ex:
+    try
+    {
+     System.out.println(10/0);
+    }
+    catch(Exception e)
+    {
+      e.printStackTrace();
+    }
+
+  2.getMessage() : This method is used to return a small message about the exception occurred.
+   Ex:
+   try
+       {
+        System.out.println(10/0);
+       }
+       catch(Exception e)
+       {
+         System.out.println(e.getMessage());
+
+         String message = e.getMessage();
+         System.out.println(message);
+       }
+ -->Finally-block :
+  ->The set of instruction which has tobe executed all the time has to written within the finally block.
+  ->Finally block is a block of code which gets executed all the time.
+        ie. irrespective of exception occurs or not.
+   Syntax :
+       finally
+       {
+
+       }
+  NOTE :
+    ->In java we can have nested try and catch block.
+    ->we can have try and catch block within finally block as well
+   Ex :
+   try{
+       try{
+
+       }catch(Exception e){
+
+       }
+   }
+   catch(Exception e){
+
+   }finally{
+       try{
+
+       }catch(Exception e){
+
+       }
+   }
 
 
