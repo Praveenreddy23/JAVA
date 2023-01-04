@@ -1,4 +1,4 @@
-package Calculator.com;
+package Calculator.Welcome;
 
 public class CalculatorIMPL implements Calculator {
     @Override

@@ -1,4 +1,4 @@
-package Calculator.com;
+package Calculator.Welcome;
 
 import java.util.Scanner;
 
