@@ -6,6 +6,7 @@ public class MainCalculator  {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+//        Upcasting
         Calculator c = new CalculatorIMPL();
 
         System.out.println("Wel come to calculator...");

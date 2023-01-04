@@ -31,33 +31,18 @@ Exception are of 2 types :
    Passing the exception object from called method to calling method is
    known as Exception propagation.
    -> Unchecked exceptions will be implicitly propagated by the JVM.
-   -->throws keyword :
-    -> throws keyword is used to propagate checked exceptions explicitly
-   by the programmer.
+
    -->throw keyword :
     -> throw keyword is used to throw the exception explicitly by the
-   programmer according to the application requirements
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        programmer according to the application requirements
+   -->throws keyword :
+    -> throws keyword is used to propagate checked exceptions explicitly
+       by the programmer.
+    ->throws is a indication to the caller about the possibility of an exception.
+    ->throws is used to propagate an exception.
+    ->throws is generally used with checked exception.
+    ->typically we use throws with methods, and we can use
+      throws wrt constructor as well.
 
  --@Difference b/w throw and throws
     THROW
