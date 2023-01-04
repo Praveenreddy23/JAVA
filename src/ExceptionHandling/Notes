@@ -8,8 +8,8 @@
                         >ArithmeticException              >ClassNotFoundException
        unchecked    {   >ArrayIndexOutOfBoundsException   >FileNotFoundException
        Exception        >ClassCastException               >IoException
-                        >InterpreterException                              (Checked
-                        >NullPointerException                               Exception)
+                        >InterpreterException             >interrupted exception   (Checked
+                        >NullPointerException                                       Exception)
 
 -->ERROR:
    ->Error is a Runtime interruption which cannot be handled(We have to Debug)
