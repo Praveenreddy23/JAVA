@@ -2,7 +2,7 @@ package CollectionFramework;
 
 import java.util.ArrayList;
 public class ArrayListExample {
-//    implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+// ArrayList implements List<E>, RandomAccess, Cloneable, java.io.Serializable
     /*
     1)ArrayList :
 -> ArrayList is a pre-defined class present in java.util package.
