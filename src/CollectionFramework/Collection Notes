@@ -1,0 +1,76 @@
+--@Collection Framework :
+
+-@Data Structure :
+  ->Data Structure is a way of storing or organizing the data.
+  ->Data Structure is the arrangement of a group of object.
+   Eg:-> Stack,Queue,Array,LinkedList,Tree,HashTable......
+
+-@Collection :
+  ->Collection is a pre-defined interface present in java.util package.
+  ->Collection is a container used to store a group of object.
+  ->Collection is introduce from JDK 1.2.
+
+--@ Difference between Array and Collection :
+          Array                                  Collection
+  1.Homogeneous in nature.              1.Homogeneous and Heterogeneous
+  2.Fixed Size.                         2.Dynamic Size.
+  3.Does not have any methods.          3.Many pre-defined methods.
+  4.Does not support Generics.          4.Generics supported.
+
+
+--@Pre-defined method in Collection Interface :
+  1. add() - add() will add an object into the collection
+  2. addAll()-addAll() will add one collection into another collection
+  3. remove()-remove() will remove an object from the collection based on index
+  4. removeAll()-removeAll() will remove one collection from another collection
+  5. contains()-contains() checks if the object is present in the collection or not
+  6. containsAll()-containsAll() will check if one collection is present in another collection or not
+  7. isEmpty()-isEmpty() will check if the collection is empty or not
+  8. clear()-clear() will remove all the objects present in the collection
+  9. size()-size() is used to count the number of object present in the collection
+  10. iterator()-iterator() is used to traverse a group of object.
+       Syntax :public Iterator<E> iterator();
+
+
+--@Collection Hierarchy :
+                                   <<Iterable>>
+                                        |
+                                  <<Collection>>
+        1)  <<List>>                 2)  <<Queue>>                   3) <<Set>>
+       ArrayList   Vector  LinkedList     PriorityQueue    HashSet      <<SortedSet>>
+                    Stack                               LinkedHashSet     <<NavigableSet>>
+                                                                             TreeSet
+
+1)<<List>> :
+ ->List is a pre-defined Interface present in java.util package.
+ ->List was introduce from JDK1.2.
+ ->The implementation class of List interface are as follows :
+  1.ArrayList
+  2.Vector
+  3.Stack
+  4.LinkedList
+
+--@Specification of List Interface :
+     1.Insertion order is maintain.
+     2.Duplicates of object are allowed.
+     3.Indexed based start from 0.
+     4.null can be inserted.
+
+--@Important method present in List Interface :
+    1.get()- get() will return the object based on index position.
+    2.indexOf()- indexOf() will find the index position of an object and first occurrence in case of duplication.
+    3.lastIndexOf()- lastIndexOf() is used to find the last index position of an object.
+    4. add(index,value)
+    5. set(index,value)
+
+ -->Object creation :
+  List l = { new ArrayList();
+             new LinkedList();
+             new Stack();
+             new Vector();
+
+1)ArrayList :
+-> ArrayList is a pre-defined class present in java.util package.
+->The initial capacity of ArrayList is 10.
+->The incremental capacity of ArrayList is (current capacity*3/2)+1.
+->The Underlined data stature from ArrayList is Resizeable Array / Growable Array.
