@@ -78,7 +78,19 @@
              new Vector();
 
 1)ArrayList :
--> ArrayList is a pre-defined class present in java.util package.
-->The initial capacity of ArrayList is 10.
-->The incremental capacity of ArrayList is (current capacity*3/2)+1.
-->The Underlined data stature from ArrayList is Resizeable Array / Growable Array.
+    -> ArrayList is a pre-defined class present in java.util package.
+    ->The initial capacity of ArrayList is 10.
+    ->The incremental capacity of ArrayList is (current capacity*3/2)+1.
+    ->The Underlined data stature from ArrayList is Resizeable Array / Growable Array.
+    ->Sequential Memory Allocation.
+    ->Contains 3 Constructors.
+
+2.LinkedList:
+   -> ArrayList is a pre-defined class present in java.util package.
+   -> The Underlined Data structure doubly LinkedList.
+   -> Non-sequential Memory Allocation.
+   -> LinkedList Has 2 Constructors.
+
+    --@When you will go for linked list type of collection ?
+       ->Whenever we want proper order of insertion , then we should go for linked list.
+       ->Linked list is a class which have dual property
