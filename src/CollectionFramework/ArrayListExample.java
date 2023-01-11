@@ -4,17 +4,25 @@ import java.util.ArrayList;
 public class ArrayListExample {
 // ArrayList implements List<E>, RandomAccess, Cloneable, java.io.Serializable
     /*
-    1)ArrayList :
--> ArrayList is a pre-defined class present in java.util package.
-->The initial capacity of ArrayList is 10.
-->The incremental capacity of ArrayList is (current capacity*3/2)+1.
-->The Underlined data stature from ArrayList is Resizeable Array / Growable Array.
+ 1)ArrayList :
+    -> ArrayList is a pre-defined class present in java.util package.
+    ->The initial capacity of ArrayList is 10.
+    ->The incremental capacity of ArrayList is (current capacity*3/2)+1.
+    ->The Underlined data stature from ArrayList is Resizeable Array / Growable Array.
+    ->Sequential Memory Allocation.
+    ->ArrayList Has 3 Constructors.
 
---@Specification of ArrayList Interface :
-     1.Insertion order is maintain.
-     2.Duplicates of object are allowed.
-     3.Indexed based start from 0.
-     4.null can be inserted.
+--@Specification/Features of ArrayList Interface :
+    1. Size is dynamic.
+    2. We can store heterogenous type of data.
+    3. It is indexed type of collection.
+    4. It allows duplicates.
+    5. It allows null.
+    6. It will follow order of insertion.
+    7. Since it is indexed type of collection we can do random access.
+    8. It will grow its size by 50 %.
+    9. It is not synchronized.
+    10.Since it is not synchronized, the performance is fast.
      */
 public static void main(String[] args) {
     ArrayList alist = new ArrayList();
