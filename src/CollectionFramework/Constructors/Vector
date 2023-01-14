@@ -1,0 +1,9 @@
+--@Vector:
+  1.Vector()
+  2.Vector(int initialCapacity)
+  3.Vector(int initialCapacity,int incrementalCapacity)
+  4.Vector(Collection c)
+
+ 1. Vector a = new Vector();
+ 2. Vector a = new Vector(60);
+ 3. Vector a = new Vector(20,5);

@@ -15,5 +15,5 @@
     6. It will follow order of insertion.
     7. Since it is indexed type of collection we can do random access.
     8. It will grow its size by 50 %.
-    9. It is not synchronized.
+    9. It is not synchronized.(Not Thread Safe)
     10.Since it is not synchronized, the performance is fast.
