@@ -1,4 +1,4 @@
-package CollectionFramework.ALExample;
+package CollectionFramework.Examples;
 
 import java.util.ArrayList;
 
