@@ -1,0 +1,15 @@
+--@LinkedHashSet :
+    ->LinkedHashSet is a class which extends HashSet.
+    ->The LinkedHashSet is a child class of HashSet class it is implemented with
+         a hybrid DS which is a combination of HashTable and LinkedList
+         ->the HashTable Structure is used for unique storage of elements whereas
+           LinkedList is used to preserve the order of insertion.
+       ->Rest all the properties are same as HashSet.
+--@Features of Linked Hash set :
+        ➢ Size is dynamic.
+        ➢ We can store heterogeneous type of data.
+        ➢ It is not indexed type of data.
+        ➢ It will not allow duplicates.
+        ➢ It allows null.
+        ➢ Since it is not indexed type of collection, we cannot do random access.
+        ➢ It will follow order of insertion.
