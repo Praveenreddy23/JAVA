@@ -1,24 +1,9 @@
-package CollectionFramework;
+package CollectionFramework.Generics;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Genericss {
-    /*
- --@ Generic class:->
-    ->To achieve generic class, we have to use angular braces < > , by using
-      generics we can store homogenous objects of a specified class type.
-       Map is of generic type by default.
-Primitive Datatype:                  Wrapper Datatype:
-    byte                                   Byte
-    short                                  Short
-    int                                    Integer
-    long                                   Long
-    float                                  Float
-    double                                 Double
-    char                                   Character
-    boolean                                Boolean
-     */
+public class GenericsExample {
     public static void main(String[] args) {
         ArrayList<String> s = new ArrayList<String>();
         s.add("10");
@@ -65,7 +50,7 @@ Primitive Datatype:                  Wrapper Datatype:
 
 //       If there are Heterogeneous Objects we should use SuperClass called 'Object';
         for (Object o:l){
-        System.out.println(o);}
+            System.out.println(o);}
 
         System.out.println("---------------------");
 

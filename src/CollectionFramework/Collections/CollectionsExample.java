@@ -1,18 +1,9 @@
-package CollectionFramework;
+package CollectionFramework.Collections;
 
 import java.util.ArrayList;
 
-public class Collections {
-    /*
-    --@Collections :
-      ->Collections is a pre-defined Class present in java.util package.
-      ->it has inbuilt methods like sort , search.
-
-         Collections (c)
-        -> Sort ( )
-        -> Binary search(
-     */
-//Collections is a pre-defined Class present in java.util package.
+public class CollectionsExample {
+    //Collections is a pre-defined Class present in java.util package.
     public static void main(String[] args) {
 
         ArrayList A = new ArrayList();
@@ -31,3 +22,4 @@ public class Collections {
         System.out.println(A);//[10, 20, 30, 40, 50]
     }
 }
+
