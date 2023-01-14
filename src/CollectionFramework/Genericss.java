@@ -69,15 +69,13 @@ Primitive Datatype:                  Wrapper Datatype:
 
         System.out.println("---------------------");
 
-        LinkedList<Object> ll = new LinkedList();
+        LinkedList ll = new LinkedList();
+//   Internally:LinkedList<Object> ll = new LinkedList();
         ll.add(23);
         ll.add("Reddy");
 
         for (Object e :ll) {
             System.out.println(e);
         }
-
-
     }
-
 }
