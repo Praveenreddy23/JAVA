@@ -42,10 +42,12 @@ public class TreeSetExample {
         for (String s :t){
             System.out.print(s+" ");//A B c d e f
         }
-        System.out.println("---------------");
+        System.out.println("-------compareTo()--------");
+
         String a = "A";//ASCII Value : 65
         String b = "B";//ASCII Value : 66
         String c = "C";//ASCII value : 67
+
         System.out.println(a.compareTo(b));//-1
 //                         65.compareTo(66))
 //                          65 < 66 --> -1
