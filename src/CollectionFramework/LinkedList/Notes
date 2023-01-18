@@ -1,6 +1,8 @@
 2.LinkedList:
    -> ArrayList is a pre-defined class present in java.util package.
    -> The Underlined Data structure doubly LinkedList.
+   -> The Objects inside LinkedList are stored interms of nodes.
+   -> An each nodes consist of Object as well as the Address of previous and Next Node.
    -> Non-sequential Memory Allocation.
    -> LinkedList Has 2 Constructors.
 
