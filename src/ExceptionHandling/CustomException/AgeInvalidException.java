@@ -1,4 +1,4 @@
-package CustomException;
+package ExceptionHandling.CustomException;
 
 public class AgeInvalidException extends RuntimeException {
 

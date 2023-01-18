@@ -1,4 +1,4 @@
-package Exception;
+package ExceptionHandling.Exception;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

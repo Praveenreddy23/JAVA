@@ -1,15 +1,15 @@
-  --@Exception Handling@--
+  --@ExceptionHandling.Exception Handling@--
                    Object
                      |
                   Throwable
-       Error          |          Exception
-                                                  ->Exception
+       Error          |          ExceptionHandling.Exception
+                                                  ->ExceptionHandling.Exception
                        ->RuntimeException                ->SQLException
                         >ArithmeticException              >ClassNotFoundException
        unchecked    {   >ArrayIndexOutOfBoundsException   >FileNotFoundException
-       Exception        >ClassCastException               >IoException
+       ExceptionHandling.Exception        >ClassCastException               >IoException
                         >InterpreterException             >interrupted exception   (Checked
-                        >NullPointerException                                       Exception)
+                        >NullPointerException                                       ExceptionHandling.Exception)
 
 -->ERROR:
    ->Error is a Runtime interruption which cannot be handled(We have to Debug)
@@ -17,12 +17,12 @@
          1.compilation error -> Syntax Mistake
          2.Runtime Error -> Execute a class without main()
 
--->Exception Handling:
-   ->Exception is a event or an interruption which stops the execution of a program.
+-->ExceptionHandling.Exception Handling:
+   ->ExceptionHandling.Exception is a event or an interruption which stops the execution of a program.
        (Below lines of code not get executed)
-   ->Exception is also a Runtime interruption which can be handled.
-   ->The process of handling an Exception is called as Exception handling.
-   ->Exception is handled using Try block and Catch block.
+   ->ExceptionHandling.Exception is also a Runtime interruption which can be handled.
+   ->The process of handling an ExceptionHandling.Exception is called as ExceptionHandling.Exception handling.
+   ->ExceptionHandling.Exception is handled using Try block and Catch block.
 
  -->Try and Catch block:
   ->The critical lines of code which gives an exception should be written inside the try block.
@@ -45,19 +45,19 @@
        try{
        System.out.println(10/0);
        }
-       catch(Exception e)
+       catch(ExceptionHandling.Exception e)
        {
-        System.out.println("Super Class Exception Handler");
+        System.out.println("Super Class ExceptionHandling.Exception Handler");
        }
 
 -->Important methods present in throwable class:
-  1.printstacktrace() : This method is used to get the complete info about the Exception.
+  1.printstacktrace() : This method is used to get the complete info about the ExceptionHandling.Exception.
     Ex:
     try
     {
      System.out.println(10/0);
     }
-    catch(Exception e)
+    catch(ExceptionHandling.Exception e)
     {
       e.printStackTrace();
     }
@@ -68,7 +68,7 @@
        {
         System.out.println(10/0);
        }
-       catch(Exception e)
+       catch(ExceptionHandling.Exception e)
        {
          System.out.println(e.getMessage());
 
@@ -91,16 +91,16 @@
    try{
        try{
 
-       }catch(Exception e){
+       }catch(ExceptionHandling.Exception e){
 
        }
    }
-   catch(Exception e){
+   catch(ExceptionHandling.Exception e){
 
    }finally{
        try{
 
-       }catch(Exception e){
+       }catch(ExceptionHandling.Exception e){
 
        }
    }

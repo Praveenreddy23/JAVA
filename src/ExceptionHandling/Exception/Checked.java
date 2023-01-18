@@ -1,4 +1,4 @@
-package Exception;
+package ExceptionHandling.Exception;
 //Example for Checked exception :
 
 import java.io.FileNotFoundException;

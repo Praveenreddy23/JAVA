@@ -1,4 +1,4 @@
-package Exception;
+package ExceptionHandling.Exception;
 
 public class Calculator {
     int add(int a, int b){

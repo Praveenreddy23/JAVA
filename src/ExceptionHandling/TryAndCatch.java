@@ -16,10 +16,10 @@ public class TryAndCatch {
         }
         catch(Exception e)
         {
-            System.out.println("Super Class Exception Handler");
+            System.out.println("Super Class ExceptionHandling.Exception Handler");
         }
 
-        //printStackTrace() : This method is used to get the complete info about the Exception.
+        //printStackTrace() : This method is used to get the complete info about the ExceptionHandling.Exception.
         System.out.println("Hello");
         try
         {
