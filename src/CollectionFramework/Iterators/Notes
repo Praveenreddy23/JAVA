@@ -41,3 +41,31 @@
           -> IllegalStateException : If the next method has not yet been called, or
                                      the remove method has already been called after the last call to the next method.
 
+
+
+ 2)ListIterator:
+ ->‘ListIterator’ in Java is an Iterator which allows users to traverse Collection in both direction.
+ ->ListIterator object can be created by calling listIterator() method present in the List interface.
+
+ --@Syntax:
+      ListIterator itr = l.listIterator();
+
+  ->It contains the following methods:
+      ->void add(Object object):
+        ->It inserts object immediately before the element that is returned by the next( ) function.
+
+      ->boolean hasNext( ):
+        ->It returns true if the list has a next element.
+
+      ->boolean hasPrevious( ):
+        ->It returns true if the list has a previous element.
+
+      ->Object next( ):
+        ->It returns the next element of the list. It throws ‘NoSuchElementException’ if there is no next element in the list.
+
+      ->Object previous( ):
+        ->It returns the previous element of the list. It throws ‘NoSuchElementException’ if there is no previous element.
+
+      ->void remove( ):
+        ->It removes the current element from the list. It throws ‘IllegalStateException’ if this function is called before next( ) or previous( ) is invoked.
+
