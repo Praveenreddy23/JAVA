@@ -1,0 +1,27 @@
+1)<<List>> :
+ ->List is a pre-defined Interface present in java.util package.
+ ->List was introduce from JDK1.2.
+ ->The implementation class of List interface are as follows :
+  1.ArrayList
+  2.Vector
+  3.Stack
+  4.LinkedList
+
+--@Specification of List Interface :
+     1.Insertion order is maintain.
+     2.Duplicates of object are allowed.
+     3.Indexed based start from 0.
+     4.null can be inserted.
+
+--@Important method present in List Interface :
+    1.get()- get() will return the object based on index position.
+    2.indexOf()- indexOf() will find the index position of an object and first occurrence in case of duplication.
+    3.lastIndexOf()- lastIndexOf() is used to find the last index position of an object.
+    4.add(index,value)- is used to add an object based on the index position already existing object gets shifted to the next position.
+    5.set(index,value)- is used to set an object based on the index position already existing object gets overridden.
+
+ -->Object creation :
+  List l = { new ArrayList();
+             new LinkedList();
+             new Vector();
+             new Stack();

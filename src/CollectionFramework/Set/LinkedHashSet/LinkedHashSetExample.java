@@ -1,4 +1,4 @@
-package CollectionFramework.LinkedHashSet;
+package CollectionFramework.Set.LinkedHashSet;
 
 import java.util.LinkedHashSet;
 
