@@ -15,11 +15,13 @@ public class CollectionsExample {
         A.add(20);
         System.out.println("Before Sorting");
         System.out.println(A);//[40, 10, 30, 50, 20]
+        A.forEach(System.out::println);
 
         java.util.Collections.sort(A);
 
         System.out.println("After Sorting");
         System.out.println(A);//[10, 20, 30, 40, 50]
+        A.forEach(Sort-> System.out.println(Sort));
     }
 }
 

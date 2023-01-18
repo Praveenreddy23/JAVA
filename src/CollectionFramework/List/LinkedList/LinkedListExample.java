@@ -55,7 +55,7 @@ import java.util.LinkedList;
 // removeAll() is used to remove all the objects of one collection from another collection.
             l.removeAll(al);
             System.out.println("Objects inside ArrayList: "+l+"Size: "+l.size());
-            System.out.println(al.containsAll(l));//false
+             System.out.println(al.containsAll(l));//false
 
             System.out.println("============add() and set()==============");
 
@@ -89,6 +89,8 @@ import java.util.LinkedList;
 
             System.out.println("After Sorting");
             System.out.println(A);//[10, 20, 30, 40, 50]
+
+
         }
     }
 

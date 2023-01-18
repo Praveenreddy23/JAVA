@@ -1,6 +1,6 @@
 package CollectionFramework.WrapperClass;
 
-public class GenericsExample {
+public class WrapperClassExample {
 
     public static void main(String[] Boxing) {
 //       Primitive Datatype

@@ -1,7 +1,7 @@
 
     --@Collections :
       ->Collections is a pre-defined Class present in java.util package.
-      ->it has inbuilt methods like sort , search.
+      ->it has inbuilt methods like sort ,   search.
 
          Collections (c)
         -> Sort ( )
