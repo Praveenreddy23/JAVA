@@ -1,0 +1,20 @@
+2.LinkedList:
+   -> ArrayList is a pre-defined class present in java.util package.
+   -> The Underlined Data structure doubly LinkedList.
+   -> Non-sequential Memory Allocation.
+   -> LinkedList Has 2 Constructors.
+
+    --@When you will go for linked list type of collection ?
+       ->Whenever we want proper order of insertion , then we should go for linked list.
+       ->Linked list is a class which have dual property
+
+--@ Features of Linked list:
+        1. Size is dynamic.
+        2. We can store heterogeneous type of data.
+        3. It is indexed type of collection.
+        4. It allows duplicates.
+        5. It allows null.
+        6. It will follow order of insertion.
+        7. Since it is indexed type of collection we can do random access.
+        8. It inherits the properties from both lists and queue.
+        9. It can use poll ( ) and peek ( ) method or get ( ) method to fetch the data.

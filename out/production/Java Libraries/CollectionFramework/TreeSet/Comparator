@@ -1,0 +1,20 @@
+--@Comparator:
+ 1.Comparator is a pre-defined interface present in java.util package.
+ 2.It was introduce from JDK 1.2.
+ 3.Comparator has an abstract method called as compare().
+
+->Syntax:
+    public int compare(Object o1 , Object o2);
+
+--@Rules to use compare objects using <<Comparator>>
+  1.Design a new class in such a way which implements the comparator interface and specify the Generics type.
+  2.import the comparator interface.
+  3.Override the compare() by specifying the business logic for comparing and sorting.
+  4.Pass the object of the class which has the sorting logic to the constructor of the TreeSet.
+
+
+--@Defference between <<Comparable>> and <<Comparator>> :
+        <<Comparable>>               <<Comparator>>
+        1.java.lang package          1.java.util package
+        2.compareTo()                2.compare()
+        3.Default Sorting            3.Custom Sorting

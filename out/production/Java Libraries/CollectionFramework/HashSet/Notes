@@ -1,0 +1,16 @@
+ --@HashSet :
+   ->HashSet is a implementation class of Set Interface.
+   ->HashSet is a pre-defined class present in java.util package.
+   ->Underlined DataStructure is HashTable.
+   ->The Initial Capacity of HashSet is 16.
+   ->HashSet grows based on the load factor or fill ratio.
+   ->default load factor is 0.75 or 75%.
+
+ --@Features of Hash set
+       ➢ Size is dynamic.
+       ➢ We can store heterogeneous type of data.
+       ➢ It is not indexed type of data.
+       ➢ It will not allow duplicates.
+       ➢ It allows null.
+       ➢ Since it is not indexed type of collection, we cannot do random access.
+       ➢ It will not follow order of insertion.

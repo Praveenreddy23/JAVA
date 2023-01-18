@@ -1,0 +1,14 @@
+
+ --@ Generic class:->
+    ->To achieve generic class, we have to use angular braces < > , by using
+      generics we can store homogenous objects of a specified class type.
+       Map is of generic type by default.
+Primitive Datatype:                  Wrapper Datatype:
+    byte                                   Byte
+    short                                  Short
+    int                                    Integer
+    long                                   Long
+    float                                  Float
+    double                                 Double
+    char                                   Character
+    boolean                                Boolean

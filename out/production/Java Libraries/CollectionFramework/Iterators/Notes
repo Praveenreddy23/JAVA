@@ -1,0 +1,71 @@
+--@Iterators:
+  -->‘Iterator’ is an interface Present in java.util package which belongs to collection framework.
+  -->A java cursor is an iterator, which is used to iterate or traverse or retrieve a
+      a collection or Stream Objects elements one by one.
+
+  -->There are three cursors in java:
+    1.Iterator     JDK 1.0
+    2.Enumeration  JDK 1.2
+    3.ListIterator JDK 1.2
+
+   1)Iterator:
+    ->Iterators in Java are used in the Collection framework to retrieve elements one by one.
+    ->It is a universal iterator as we can apply it to any Collection object.
+    ->By using Iterator, we can perform both read and remove operations.
+    ->Iterator must be used whenever we want to enumerate elements in
+       all Collection framework implemented interfaces like,
+        Set, List, Queue, Deque, and all implemented classes of Map interface.
+    ->Iterator is the only cursor available for the entire collection framework.
+    ->Iterator object can be created by calling iterator() method present in Collection interface.
+
+  -@ Syntax:
+      Iterator itr = c.iterator();
+       ->Here “c” is any Collection object.
+       ->itr is of type Iterator interface and refers to “c”.
+
+ --@Methods of Iterator Interface in Java:
+   1. hasNext(): Returns true if the iteration has more elements.
+   --@Syntax:
+          public boolean hasNext();
+
+   2. next(): Returns the next element in the iteration. It throws NoSuchElementException if no more element is present.
+   --@Syntax:
+          public Object next();
+
+   3. remove(): Removes the next element in the iteration. This method can be called only once per call to next().
+   --@Syntax:
+          public void remove();
+
+       -->Note: remove() method can throw two exceptions namely as follows:
+          -> UnsupportedOperationException : If the remove operation is not supported by this iterator.
+          -> IllegalStateException : If the next method has not yet been called, or
+                                     the remove method has already been called after the last call to the next method.
+
+
+
+ 2)ListIterator:
+ ->‘ListIterator’ in Java is an Iterator which allows users to traverse Collection in both direction.
+ ->ListIterator object can be created by calling listIterator() method present in the List interface.
+
+ --@Syntax:
+      ListIterator itr = l.listIterator();
+
+  ->It contains the following methods:
+      ->void add(Object object):
+        ->It inserts object immediately before the element that is returned by the next( ) function.
+
+      ->boolean hasNext( ):
+        ->It returns true if the list has a next element.
+
+      ->boolean hasPrevious( ):
+        ->It returns true if the list has a previous element.
+
+      ->Object next( ):
+        ->It returns the next element of the list. It throws ‘NoSuchElementException’ if there is no next element in the list.
+
+      ->Object previous( ):
+        ->It returns the previous element of the list. It throws ‘NoSuchElementException’ if there is no previous element.
+
+      ->void remove( ):
+        ->It removes the current element from the list. It throws ‘IllegalStateException’ if this function is called before next( ) or previous( ) is invoked.
+

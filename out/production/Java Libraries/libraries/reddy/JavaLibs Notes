@@ -1,0 +1,48 @@
+#Java libraries
+ -->java libraries is a collection of pre-defined packages.
+ -->Each package as a collection of class and interface.
+ -->Each class and interfaces as a collection of variable and methods
+
+ *All the pre-defined packages are present in a zip file called as src.zip
+
+# A few pre-defined packages are as follows:
+    1.java.lang
+    2.java.util
+    3.java.io
+    4.java.sql
+    5.java.net
+    6.java.math
+    7.java.applet
+    8.java.awt   etc....
+
+Notes:
+    java.lang-->Object,String,System,thread,<<comparable>>
+    java.util-->Scanner,ArrayList,HashSet,<<collection>>
+    java.io-->file,filereader,fileWriter
+
+1.Java.lang package:
+ ->java.lang package is attometically imported in all class and interface.
+
+*Object:
+ ->Object is a pre-defined class present in java.lang package.
+ ->Object is the supermost class in entire java. because every class in java will implicitly inheriter Object class.
+
+Example:
+  class pen(extends Object)
+  {
+    Object obj = new pen();
+  }
+
+#importent methods are present in Object class:
+ 1.public String toString()
+ 2.public int hashCode()
+ 3.public boolean equals(Object obj)
+ 4.public void notify()
+ 5.public void notifyAll()
+ 6.public void Wait()
+ 7.public void Wait(long a)
+ 8.public void Wait(long a int b)
+ 9.public class getclass()
+ 10.protected object clone()
+ 11.protected void finalize()
+
