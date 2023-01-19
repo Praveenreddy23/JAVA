@@ -1,6 +1,7 @@
 package CollectionFramework.Set.HashSet;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class HashSetExample {
 
@@ -16,7 +17,7 @@ public class HashSetExample {
         h.add(null);
         h.add(null);
 
-//It will not follow order of insertion.
+//        It will not follow order of insertion.
 //        It will not allow duplicates.
         System.out.println(h);//[P, null, 20.4, reddy, 10]
         System.out.println("-------------");
@@ -32,6 +33,11 @@ public class HashSetExample {
             //20.4
             //reddy
             //10
+        }
+        Iterator itr = h.iterator();
+        while(itr.hasNext()){
+            Object o = itr.next();
+            System.out.println(o);
         }
 
     }

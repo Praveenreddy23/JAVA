@@ -13,6 +13,8 @@ public class GenericsExample {
         for (String r :s) {
             System.out.println(r);
         }
+//        s.forEach(System.out::println);
+//        s.forEach(list-> System.out.println(list));
 
         System.out.println("---------------------");
 

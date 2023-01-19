@@ -16,7 +16,7 @@
     ➢ It will follow order of insertion.
     ➢ Since it is indexed type of collection we can do random access.
     ➢ It will grow its size by 100 %.
-    ➢ It is synchronized.(Thread safe).
+    ➢ It is synchroni zed.(Thread safe).
     ➢ Since it is synchronized, the performance is slow.
 
 --@Difference Between ArrayList and Vector:

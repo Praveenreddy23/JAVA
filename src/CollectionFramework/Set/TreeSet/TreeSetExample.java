@@ -16,6 +16,7 @@ public class TreeSetExample {
 
 //        T.add('p');//ClassCastException
         System.out.println(T);//[2, 10, 20, 30]
+        //It is complexity auto sorted.
 
         TreeSet t1 = new TreeSet();
 
@@ -23,6 +24,7 @@ public class TreeSetExample {
         t1.add('r');
         t1.add('e');
         t1.add('p');
+
 //        t1.add("jaav");//ClassCastException
         System.out.println(t1);//[e, p, r]
 

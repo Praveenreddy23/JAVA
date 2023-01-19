@@ -1,6 +1,6 @@
  --@HashSet :
-   ->HashSet is a implementation class of Set Interface.
    ->HashSet is a pre-defined class present in java.util package.
+   ->HashSet is a implementation class of Set Interface.
    ->Underlined DataStructure is HashTable.
    ->The Initial Capacity of HashSet is 16.
    ->HashSet grows based on the load factor or fill ratio.

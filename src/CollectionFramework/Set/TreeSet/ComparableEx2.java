@@ -1,5 +1,6 @@
 package CollectionFramework.Set.TreeSet;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class ComparableEx2 implements Comparable<ComparableEx2> {
@@ -71,6 +72,13 @@ public class ComparableEx2 implements Comparable<ComparableEx2> {
 
         for (ComparableEx2 c : t){
             System.out.println(c);
+        }
+
+
+        Iterator itr = t.iterator();
+        while (itr.hasNext()){
+            Object i = itr.next();
+            System.out.println(i);
         }
     }
 }

@@ -1,0 +1,12 @@
+--@ Stack :
+->Stack is class which belongs to java.util.package
+->Stack extends vector class.
+--@Features of Stack
+        ➢ Size is dynamic.
+        ➢ We can store heterogeneous type of data.
+        ➢ It is indexed type of collection.
+        ➢ It allows duplicates.
+        ➢ It allows null.
+        ➢ It will follow order of insertion.
+        ➢ Since it is indexed type of collection we can do random access.
+        ➢ It follows “ last in first out”

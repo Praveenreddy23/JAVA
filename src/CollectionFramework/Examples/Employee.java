@@ -1,6 +1,8 @@
 package CollectionFramework.Examples;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
 
 public class Employee {
     int id;
@@ -37,5 +39,14 @@ public class Employee {
 //            ID: 206 Name: Joshi
 
         }
-    }
+        System.out.println("--------forEach()--Lambda expression-------");
+        a.forEach(name-> System.out.println(name));
+        System.out.println("-------forEach() usring ref variable----");
+        a.forEach(System.out::println);
+        System.out.println("----Iterator-----------");
+        Iterator itr = a.iterator();
+        while(itr.hasNext()){
+            Object o = itr.next();
+            System.out.println(o);
+    }}
 }

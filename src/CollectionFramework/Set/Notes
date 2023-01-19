@@ -1,6 +1,6 @@
 2)<<Set>> :
   ->Set is a pre-defined Interface present in java.util package.
-  ->List was introduce from JDK1.2.
+  ->Set  was introduce from JDK1.2.
   ->A Set is a type of collection which is used to store only unique elements.
   ->Set Doesn't  allows duplicate elements
   ->Elements are stored without index.

@@ -31,5 +31,8 @@ public class LinkedHashSetExample {
             //Repository
             
         }
+        l.forEach(System.out::println);
+
+
     }
 }

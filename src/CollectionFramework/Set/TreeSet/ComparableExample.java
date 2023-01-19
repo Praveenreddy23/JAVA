@@ -41,7 +41,7 @@ public class ComparableExample implements Comparable<ComparableExample> {
         ComparableExample c1 = new ComparableExample(2,"C");
         ComparableExample c2 = new ComparableExample(1,"A");
 
-        TreeSet<ComparableExample> t = new TreeSet();
+        TreeSet<ComparableExample> t = new TreeSet<>();
 
         t.add(c);
         t.add(c1);
