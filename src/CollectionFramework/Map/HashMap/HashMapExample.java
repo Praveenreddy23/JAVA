@@ -8,32 +8,33 @@ public class HashMapExample {
 
         HashMap h = new HashMap();
 // put()-> is used to add Key and Value inside Map.
-        h.put(23,"Reddy");
-        h.put(24,"Prabhas");
+        h.put(83,"Reddy");
+        h.put("Prabhas",45);
+        h.put(25,40);
 //It will not follow order of insertion.
-        System.out.println(h);//{23=Reddy, 24=Prabhas}
+        System.out.println(h);//{83=Reddy, Prabhas=45, 25=40}
 
         System.out.println("_--------------------");
 
 //   get()-> is used to get an Value based on the Key Specified.
-        System.out.println(h.get(23));
+        System.out.println(h.get(25));//40
 
         System.out.println("_--------------------");
 
 //  containsKey()->is used to check if the Key is Present or not.
-        System.out.println(h.containsKey(23));//true
-        System.out.println(h.containsKey("reddy"));//false
+        System.out.println(h.containsKey(83));//true
+        System.out.println(h.containsKey("Reddy"));//false
 //   containsValue()->is used to check if the value is present or not.
         System.out.println(h.containsValue("Reddy"));//true
 
         System.out.println("_--------------------");
 
-        System.out.println(h);//{23=Reddy, 24=Prabhas}
+        System.out.println(h);//{83=Reddy, Prabhas=45, 25=40}
 
 //      remove()->is used to remove an value based on the Key specified
-        h.remove(23);
+        h.remove(83);
 
-        System.out.println(h);//{24=Prabhas}
+        System.out.println(h);//{Prabhas=45, 25=40}
 
         System.out.println("_--------------------");
 

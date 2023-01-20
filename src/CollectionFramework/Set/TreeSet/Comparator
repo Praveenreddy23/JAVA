@@ -2,6 +2,7 @@
  1.Comparator is a pre-defined interface present in java.util package.
  2.It was introduce from JDK 1.2.
  3.Comparator has an abstract method called as compare().
+ 4.Custom Sorting.
 
 ->Syntax:
     public int compare(Object o1 , Object o2);

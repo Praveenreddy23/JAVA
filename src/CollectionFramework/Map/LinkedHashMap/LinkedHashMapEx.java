@@ -18,6 +18,7 @@ public class LinkedHashMapEx {
 
        for (int key :s){
            System.out.println(key+" "+l.get(key));
+//                             key       Value
            //23 Reddy
            //21 reddy
            //22 Red

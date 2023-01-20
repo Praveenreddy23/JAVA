@@ -3,7 +3,7 @@ package CollectionFramework.Set.TreeSet;
 import java.util.Comparator;
 
 public class SortAge implements Comparator<ComparatorExample> {
-//Design a new class in such a way which implements the comparator interface and specify the Generics type.
+    //Design a new class in such a way which implements the comparator interface and specify the Generics type.
 //    Override the compare() by specifying the business logic for comparing and sorting.
     @Override
     public int compare(ComparatorExample o1, ComparatorExample o2) {
