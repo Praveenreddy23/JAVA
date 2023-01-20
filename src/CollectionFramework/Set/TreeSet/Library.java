@@ -1,5 +1,6 @@
 package CollectionFramework.Set.TreeSet;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.TreeSet;
 
@@ -48,11 +49,12 @@ public class Library {
 //        System.out.println(pq.poll());
 //        System.out.println(pq.peek());
 //        System.out.println(pq.peek());
-
-
         }
-
-
-
+    }
+}
+ class LibraryDetails implements Comparator<Library> {
+    @Override
+    public int compare(Library o1, Library o2) {
+        return o1.bId- o2.bId;
     }
 }
