@@ -1,6 +1,7 @@
 package CollectionFramework.Map.LinkedHashMap;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Set;
 
@@ -41,5 +42,9 @@ public class LinkedHashMapEx {
             //reddy 21
             //Reddy 22
         }
+//        Iterator<String> itr = r.iterator();
+//        while(itr.hasNext()){
+//            System.out.println(itr.next());
+//        }
     }
 }

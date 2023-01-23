@@ -83,6 +83,16 @@
       ➢ It is completely auto sorted based on key.
       ➢ It sorts based on ASCII values.
 
+  -->HashMap-> stores the element in key-value pair.it allows null as a key also value.
+    ->it doesn't preserve the order of Insertion.
+  -->The LinkedHashMap-> is a subclass of HashMap which preserves the order of insertion.
+  -->HAshTable-> allows Key-Value pair but key and value should not be null
+    ->it is a ThreadSafe class.
+    ->HashTable is also called as Synchronized Map.
+  -->TreeMap-> is a type of Map which implements SortedMap according to key.
+     Hence the elements in TreeMap are Sorted in Natural ascending Order.
+
+
 
 
 
