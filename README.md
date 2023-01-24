@@ -1,2 +1,2 @@
 # JAVA
-All about CollectionFramework,ExceptionHandaling,Libraries Notes With Code
+All about CollectionFramework,ExceptionHandling,Libraries Notes With Code
