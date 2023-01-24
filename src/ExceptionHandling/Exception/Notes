@@ -1,19 +1,21 @@
-ExceptionHandling.Exception are of 2 types :
-1. Compile Time ExceptionHandling.Exception ( checked exception )
-2. Run Time ExceptionHandling.Exception ( unchecked exception )
+Exception are of 2 types :
+1. Compile Time Exception ( checked exception )
+2. Run Time Exception ( unchecked exception )
 
- 1.Compile Time ExceptionHandling.Exception ( checked exception ) :
+ 1.Compile Time Exception ( checked exception ) :
   ->Any exception which is caught by the compiler at the compile time , this is
     called compile time exception or checked exception.
    -> All the compile exceptions can be addressed by using try and catch or
     throws.
    -> Compile time exceptions should be addressed at the compile time itself.
+   Ex:InterruptedException...FileNotFoundException...
 
-  2. Run Time ExceptionHandling.Exception ( unchecked ) :
+  2. Run Time Exception ( unchecked ) :
    ->Any exception which is not caught(checked) at the compile time and found at
      the run time is called as run time exception or unchecked exception.
     -> Run time exceptions can be addressed by using try and catch or throws.
     ->All the Run time exceptions should be addressed at the Run time itself.
+    Ex:ArithmeticException...ArrayIndexOutOfBoundException...
 
  --@Difference b/w error and exception
     ERROR
@@ -21,37 +23,14 @@ ExceptionHandling.Exception are of 2 types :
     2. Error is occurred due to system configuration.
     3. Error can be handled.
     EXCEPTION
-    1. ExceptionHandling.Exception is predictable.
-    2. ExceptionHandling.Exception is occurred due to mistake done by the programmer.
+    1. Exception is predictable.
+    2. Exception is occurred due to mistake done by the programmer.
     3. exception can be handled
 
    ---------------------------------------------------------------------------------
 
- --@ ExceptionHandling.Exception propagation :
+ --@ Exception propagation :
    Passing the exception object from called method to calling method is
-   known as ExceptionHandling.Exception propagation.
+   known as Exception propagation.
    -> Unchecked exceptions will be implicitly propagated by the JVM.
 
-   -->throw keyword :
-    -> throw keyword is used to throw the exception explicitly by the
-        programmer according to the application requirements
-   -->throws keyword :
-    -> throws keyword is used to propagate checked exceptions explicitly
-       by the programmer.
-    ->throws is a indication to the caller about the possibility of an exception.
-    ->throws is used to propagate an exception.
-    ->throws is generally used with checked exception.
-    ->typically we use throws with methods, and we can use
-      throws wrt constructor as well.
-
- --@Difference b/w throw and throws
-    THROW
-    1. Throw is used to throw the instance of throwable type.
-    2. Throw should be always developed in method body.
-    3. Throw is used to create the exception.
-    4. Throw can throw only 1 object at a time.
-    THROWS
-    1. Throws is used to propagate the exception from 1 method to the called method.
-    2. Throws should be developed in method declaration.
-    3. Throws is used to propagate the exception.
-    4. Throws can propagate more than 1 exception

@@ -1,13 +1,13 @@
-  --@ExceptionHandling.Exception Handling@--
+  --@Exception Handling@--
                    Object
                      |
                   Throwable
-       Error          |          ExceptionHandling.Exception
-                                                  ->ExceptionHandling.Exception
+       Error          |          Exception
+                                                  ->Exception
                        ->RuntimeException                ->SQLException
                         >ArithmeticException              >ClassNotFoundException
        unchecked    {   >ArrayIndexOutOfBoundsException   >FileNotFoundException
-       ExceptionHandling.Exception        >ClassCastException               >IoException
+       Exception        >ClassCastException               >IoException
                         >InterpreterException             >interrupted exception   (Checked
                         >NullPointerException                                       ExceptionHandling.Exception)
 
@@ -17,16 +17,16 @@
          1.compilation error -> Syntax Mistake
          2.Runtime Error -> Execute a class without main()
 
--->ExceptionHandling.Exception Handling:
-   ->ExceptionHandling.Exception is a event or an interruption which stops the execution of a program.
+-->Exception Handling:
+   ->Exception is a event or an interruption which stops the execution of a program.
        (Below lines of code not get executed)
-   ->ExceptionHandling.Exception is also a Runtime interruption which can be handled.
-   ->The process of handling an ExceptionHandling.Exception is called as ExceptionHandling.Exception handling.
-   ->ExceptionHandling.Exception is handled using Try block and Catch block.
+   ->Exception is also a Runtime interruption which can be handled.
+   ->The process of handling an Exception is called as ExceptionHandling.Exception handling.
+   ->Exception is handled using Try block and Catch block.
 
  -->Try and Catch block:
   ->The critical lines of code which gives an exception should be written inside the try block.
-  ->If there is try block, mandatorily catch block should be present.
+  ->If there is try block, mandatory catch block should be present.
   ->The Solution should always be written the catch block.
   ->Catch block will be executed only if an exception occurs.
    Syntax :
@@ -45,19 +45,19 @@
        try{
        System.out.println(10/0);
        }
-       catch(ExceptionHandling.Exception e)
+       catch(Exception e)
        {
-        System.out.println("Super Class ExceptionHandling.Exception Handler");
+        System.out.println("Super Class Exception Handler");
        }
 
 -->Important methods present in throwable class:
-  1.printstacktrace() : This method is used to get the complete info about the ExceptionHandling.Exception.
+  1.printStackTrace() : This method is used to get the complete info about the Exception.
     Ex:
     try
     {
      System.out.println(10/0);
     }
-    catch(ExceptionHandling.Exception e)
+    catch(Exception e)
     {
       e.printStackTrace();
     }
@@ -68,7 +68,7 @@
        {
         System.out.println(10/0);
        }
-       catch(ExceptionHandling.Exception e)
+       catch(Exception e)
        {
          System.out.println(e.getMessage());
 
@@ -91,16 +91,16 @@
    try{
        try{
 
-       }catch(ExceptionHandling.Exception e){
+       }catch(Exception e){
 
        }
    }
-   catch(ExceptionHandling.Exception e){
+   catch(Exception e){
 
    }finally{
        try{
 
-       }catch(ExceptionHandling.Exception e){
+       }catch(Exception e){
 
        }
    }

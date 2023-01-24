@@ -34,3 +34,7 @@ public class LoginPage {
     }
 
 }
+class InvalidPasswordException extends RuntimeException {
+
+}
+

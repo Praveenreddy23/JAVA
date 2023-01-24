@@ -25,3 +25,6 @@ public class ATM {
 
     }
 }
+ class InsufficientBalanceException extends Exception{
+}
+

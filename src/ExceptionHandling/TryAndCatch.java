@@ -16,10 +16,10 @@ public class TryAndCatch {
         }
         catch(Exception e)
         {
-            System.out.println("Super Class ExceptionHandling.Exception Handler");
+            System.out.println("Super Class Exception Handler");
         }
-
-        //printStackTrace() : This method is used to get the complete info about the ExceptionHandling.Exception.
+        System.out.println("-----------------------------------------------");
+        //printStackTrace() : This method is used to get the complete info about the Exception.
         System.out.println("Hello");
         try
         {
@@ -27,9 +27,11 @@ public class TryAndCatch {
         }
         catch(Exception e){
             e.printStackTrace();
+//            java.lang.ArithmeticException: / by zero
+//	at ExceptionHandling.TryAndCatch.main(TryAndCatch.java:26)
         }
         System.out.println("Bye");
-
+        System.out.println("----------------------------------------------------");
        //getMessage() :  This method is used to return a small message about the exception occurred.
         try{
             System.out.println(10/0);
@@ -38,7 +40,7 @@ public class TryAndCatch {
             String message = e.getMessage();
             System.out.println(message);// by zero
         }
-
+        System.out.println("-------------------------------------");
 //       Finally-block : Is a block of code which gets executed all the time.
         try
         {
@@ -52,10 +54,5 @@ public class TryAndCatch {
         {
             System.out.println("inside finally block");
         }
-
-
-
-
-
     }
 }
