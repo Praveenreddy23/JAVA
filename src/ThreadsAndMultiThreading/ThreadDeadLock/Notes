@@ -1,0 +1,14 @@
+--@Thread Dead lock:-
+  ->Dead lock in java is a programing situation where teo or more threads are blocked forever.
+  ->It is a Situation where 2 threads are waiting to lock the objects of each-other to complete
+    the execution and wait for INFINITE period of time.
+
+  -->Thread Dead lock can be Overcome by using Inter Thread Communication(ITC).
+   --> Inter Thread Communication(ITC) achieved by using methods of object class:
+        1)wait()
+        2)notify()
+        3)notifyAll()
+   1)wait()-> it will pause the execution of the thread and also release all the object
+               locks hold by the given thread.
+   2)notify()->it will send the notification to the thread which is in wait state to resume its execution.
+   3)notifyAll()->it will send the notification to all threads which are in wait state to resume its execution.

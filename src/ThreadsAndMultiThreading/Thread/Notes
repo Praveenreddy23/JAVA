@@ -1,0 +1,36 @@
+--@Thread:
+  ->Thread is a pre-defined class which is present in java.lang package.
+  ->Thread is a basic unit of CPU and it is well known for independent execution.
+
+  ->threads are used for performing Multitasking in programs/Applications.
+  ->Whenever JVM starts the execution it creates 3 Thread byDefault:-
+      1)Main Thread
+      2)Garbage Collector
+      3)Thread Scheduler
+
+  ->By-default all the programs in java will be executed in Main thread.
+
+ -->In java Thread can be created in 2ways:-
+     1)By extending Thread Class.
+     2)By Implementing Runnable Interface.
+
+  1)By extending Thread Class:-
+   ->step-1: Create a class that extends Thread class.
+   ->step-2: Override run() to define the task that should be executed by the thread.
+           ->Start the thread execution
+   ->step-3: Create the object of subclass.
+   ->step-4: use the subclass object to call start() of thread class.
+
+  2)By implementing Runnable interface:-
+   ->step-1: Create a class that implements Runnable interface.
+   ->step-2: Override run() to define task that should be executed by the thread.
+          ->Start the thread execution
+   ->step-3: create Object of implementation Class
+   ->step-4: Create Object of thread class and pass the implementation class object reference to thread constructor.
+   ->step-5: Use the thread class object to call start() of thread class.
+
+  Note:- If the class is already extends from some other super class, then it is not possible to extends thread class
+         as it lead multiple inheritance and hence thread task is define by implementing Runnable interface.
+
+ -->Thread Scheduler:-
+    ->Thread Scheduler is the part of JVM which executes multiple threads on a single processor randomly.
