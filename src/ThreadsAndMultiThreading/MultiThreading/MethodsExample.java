@@ -1,7 +1,7 @@
 package ThreadsAndMultiThreading.MultiThreading;
 
 public class MethodsExample extends Thread {
-    public static void main(String[] args) {
+    public static void Amain(String[] args) {
         MethodsExample m = new MethodsExample();
         System.out.println(m.getId());
         System.out.println(m.getName());
