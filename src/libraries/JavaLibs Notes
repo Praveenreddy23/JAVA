@@ -18,14 +18,14 @@
 Notes:
     java.lang-->Object,String,System,thread,<<comparable>>
     java.util-->Scanner,ArrayList,HashSet,<<collection>>
-    java.io-->file,filereader,fileWriter
+    java.io-->file,file-reader,fileWriter
 
 1.Java.lang package:
- ->java.lang package is attometically imported in all class and interface.
+ ->java.lang package is automatically imported in all class and interface.
 
 *Object:
  ->Object is a pre-defined class present in java.lang package.
- ->Object is the supermost class in entire java. because every class in java will implicitly inheriter Object class.
+ ->Object is the supermost class in entire java. because every class in java will implicitly inherited Object class.
 
 Example:
   class pen(extends Object)

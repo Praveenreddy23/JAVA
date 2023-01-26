@@ -1,4 +1,4 @@
-package libraries.reddy;
+package libraries;
 /*
 --#Note,
    --@ String class implements the following interfaces:->
@@ -39,14 +39,14 @@ package libraries.reddy;
 public class StringExample {
     public static void main(String[] args)
     {
-        String s= new String();
+        String s= "";
 
         System.out.println(s);// null
-        System.out.println(s.toString());// null
+        System.out.println(s);// null
         System.out.println(s.hashCode());//0
 
-        String s1= new String();
-        String s2= new String();
+        String s1= "";
+        String s2= "";
 //        System.out.println(s1==s2);
         System.out.println(s1.equals(s2));//true
 

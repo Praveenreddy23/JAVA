@@ -1,4 +1,4 @@
-package libraries.reddy;
+package libraries;
 /*
 --@hashCode()
   ->hashCode() method return a unique id or no. for an object.

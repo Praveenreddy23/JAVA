@@ -1,4 +1,4 @@
-package libraries.reddy;
+package libraries;
 /*
 --@ StringBuffer:->
     ->StringBuffer is a pre-defined final class present in java.lang package.
@@ -22,7 +22,7 @@ package libraries.reddy;
 public class StringBufferAndBuilder {
     public static void main(String[] args)
     {
-        String sb = new String("Salar");
+        String sb = "Salar";
 
         System.out.println(sb);//Salar
         sb.concat("Prabhas");
@@ -30,7 +30,7 @@ public class StringBufferAndBuilder {
 
         System.out.println("----------");
 
-        String sb1 = new String("Salar ");
+        String sb1 = "Salar ";
         System.out.println(sb1);//Salar
         sb1 =sb1.concat("Prabhas");
         System.out.println(sb1);//Salar Prabhas

@@ -1,11 +1,11 @@
-package libraries.reddy;
+package libraries;
 
 import java.util.Locale;
 
 public class StringMethods {
     public static void main(String[] args) {
 //        String s = "Praveen Reddy";
-        String str= new String("Praveen Reddy");
+        String str= "Praveen Reddy";
         System.out.println(str.length());//13
         System.out.println(str.startsWith("pra"));//false
         System.out.println(str.endsWith("dy"));//true

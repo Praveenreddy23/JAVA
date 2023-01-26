@@ -1,9 +1,9 @@
-package libraries.reddy;
+package libraries;
 /*
  # equals():->
-  ->equals method used for content comparision.
-  Syntex:public boolean eguals(Object obj)
-  ->by defalut equals method will compare the address or reference of two object.
+  ->equals method used for content comparison.
+  Syntax:public boolean equals(Object obj)
+  ->by default equals method will compare the address or reference of two object.
    therefore, in order to compare the content of two object we have to override equals method (equals()).
  */
 // program without overriding equals method:
