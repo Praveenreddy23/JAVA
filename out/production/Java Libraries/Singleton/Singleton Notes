@@ -1,9 +1,0 @@
-     --@ Singleton Design Pattern or Singleton Class @--
-
-   --> Singleton class wherein we can create only
-      a single instance or a single object for a class.
-
-  #.Rules in order to develop Singleton class:->
-     1.Declare a private Constructor.
-     2.Have public static helper/factory method to create a single object.
-     3.Declare a private static non-Primitive reference variable.
