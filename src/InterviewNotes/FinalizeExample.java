@@ -9,18 +9,17 @@ public class FinalizeExample {
         this.b = b;
         this.c = c;
     }
-
         @Override
         protected  void finalize(){
-       System.out.println("Resources are free");
+       java.lang.System.out.println("Resources are free");
    }
 }
 class P{
     public static void main(String[] args) {
         FinalizeExample a = new FinalizeExample(10,20,30);
         a=null;
-        a.System.gc();
+        System.gc();
         System.out.println("Removed");
-       a.finalize();
+
     }
 }

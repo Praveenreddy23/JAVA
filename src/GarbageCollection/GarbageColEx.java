@@ -4,6 +4,7 @@ public class GarbageColEx {
     public GarbageColEx() {
         System.out.println("Object is created");
     }
+    @Override
     protected  void finalize(){
         System.out.println("Object is Destroyed");
     }
