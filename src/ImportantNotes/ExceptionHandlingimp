@@ -1,0 +1,92 @@
+
+1)What is an Error and Exception?
+  ->Error:- is a mistake or a problem which generally occurs during
+             execution of a program.
+  ->Error can occurs during
+      1.compilation error -> Syntax Mistake
+      2.Runtime Error -> Execute a class without main()
+  ->Error should always be debug.
+
+  ->Exception:- is an event or interruption which stops the execution of a program.
+                (Below line of code not get executed)
+  ->The process of Handling an exception is called exceptionHandling.
+
+2)Explain try block and catch block?
+ >try block:-
+  ->The critical lines of code which might give an exception should be return
+     inside try block.
+  ->If there is try block, mandatory catch block should be present.
+ >catch block:-
+  ->Catch block will get executed only when an exception occurs.
+       Syntax :
+       try
+       {
+          //set of instructions
+       }
+       catch(ExceptionName referenceVariable)
+       {
+         //set of instructions
+       }
+
+3)What is finally block?
+  ->finally block is a block of code which gets executed all the time.
+
+4)What is checkedException and UnCheckedException?
+  ->checkedException/compileTime exception:-
+    ->It is compiler known exception.
+    ->Any Exception which is caught by the compiler at the compile time is called
+       checkedException or compile time exception.
+    ->All the compile exception can be addressed at the compile time itself.
+    Eg:InterruptedException,FileNotFoundException etc...
+
+  ->UnCheckedException/RunTime Exception:-
+    ->It is compiler Unknown exception.
+    ->Any exception which is not caught at the compile time and found at RunTime is called
+      UnCheckedException or RunTime Exception.
+    ->RunTime exception can be addressed by using try and catch or throws.
+    Eg:ArithmeticException,ArrayIndexOutOfBoundException etc...
+
+5)What is getMessage() and printStackTrace()?
+  ->getMessage():
+    ->This method is used to return a small message about the exception.
+  ->printStackTrace():
+    ->This method is used to get the complete info about the exception.
+
+6)Difference between throw and throws?
+  -> THROW
+        1. Throw is used to throw the instance of throwable type.
+        2. Throw should be always developed in method body.
+        3. Throw is used to create the exception.
+        4. Throw can throw only 1 object at a time.
+  -> THROWS
+        1. Throws is used to propagate the exception from 1 method to the called method.
+        2. Throws should be developed in method declaration.
+        3. Throws is used to propagate the exception.
+        4. Throws can propagate more than 1 exception
+
+7)What are customException and explain the step to develop?
+ ->Based on the project,it is sometimes necessary to create our own Exception and those exceptions
+    which the user/programmer creates are called as custom Exception or User-defined Exception.
+
+ -->Rules for working with custom Exception:
+      1.Create a class with the Exception name.
+      2.The exception class which we created should either inherit Exception(Checked)
+         or RuntimeException(Unchecked) class.
+      3.Create an object of the exception class and invoke/throw the object of that Exception.
+      4.Handle it using try and catch block.
+
+8)Explain final,finally,finalize:
+  1)final:
+    ->final is a keyword
+    ->We can use with a Variable,Method and Class.
+    ->If there is a final variable is act as a constant means we cannot reinitialize.
+    ->If there is a final Method it cannot be overridden but it can be inherited.
+    ->If there is a final class cannot be inherited.
+
+  2)finally:
+   ->finally is a block used during exception handling.
+
+ 3)finalize:
+  ->finalize is a method used during garbage collection that is when object
+    getting removed(Garbage collected) just before
+    finalize method will executed.

@@ -1,4 +1,4 @@
-package InterviewNotes;
+package ImportantNotes;
 
 public class FinalizeExample {
     public java.lang.System System;

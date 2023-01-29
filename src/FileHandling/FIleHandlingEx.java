@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Date;
 
 public class FIleHandlingEx {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //To create a new folder
         File f = new File("D:/Thar");
 //mkdir() is used to create a new folder.
@@ -58,5 +58,21 @@ public class FIleHandlingEx {
 
         System.out.println(new Date(milliseconds));
 
+        System.out.println("----------File Information");
+
+        File i = new File("C:\\Users\\Dell\\OneDrive\\Desktop\\Reddy.txt");
+        System.out.println(i.createNewFile());
+        if (i.exists()){
+            System.out.println("File Name: "+i.getName());
+            System.out.println("File Location: "+i.getAbsolutePath());
+            System.out.println("File Size: "+i.length());
+            System.out.println("File Readable: "+i.canRead());
+            System.out.println("File Writable: "+i.canWrite());
+            System.out.println("File Removed: "+i.delete());
+            System.out.println(i.getAbsoluteFile());
+        }
+        else{
+            System.out.println("File DoesNot Exits!!!!");
+        }
     }
 }

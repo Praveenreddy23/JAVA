@@ -21,7 +21,7 @@
    ->Exception is a event or an interruption which stops the execution of a program.
        (Below lines of code not get executed)
    ->Exception is also a Runtime interruption which can be handled.
-   ->The process of handling an Exception is called as ExceptionHandling.Exception handling.
+   ->The process of handling an Exception is called as Exception handling.
    ->Exception is handled using Try block and Catch block.
 
  -->Try and Catch block:
@@ -76,7 +76,7 @@
          System.out.println(message);
        }
  -->Finally-block :
-  ->The set of instruction which has tobe executed all the time has to written within the finally block.
+  ->The set of instruction which has to be executed all the time has to written within the finally block.
   ->Finally block is a block of code which gets executed all the time.
         ie. irrespective of exception occurs or not.
    Syntax :
