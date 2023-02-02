@@ -1,0 +1,52 @@
+--@FileHandling:
+ ->The process of writing the data in to a file or reading the data from a file is called as file Handling.
+ ->The data or information which is present in a java program can be stored in to  two methods.
+   1)File using :- java.io package
+   2)DataBase using :-JDBC/Hibernate
+
+ --@ Important Classes present in java.io package:
+     1)File
+     2)FileReader
+     3)FileWriter
+     4)FileInputStream
+     5)FileOutputStream
+     6)ObjectInputStream
+     7)ObjectOutputStream
+
+--@Methods in FileHandling:
+  1)mkdir() is used to create a new folder.
+  2)createNewFile() is used to create a new file based on the extensions.
+  3)exists() is used to check if the file/folder is present or not.
+  4)delete() is used to delete the file/folder.
+  5)renameTo() is used to rename old file/folder to a new file/folder.
+  6)lastModified()is used to give the last modified date and time of the file/folder in milliseconds
+  7)write()
+  8)read()
+  9)close()
+  10)flush()
+
+ -->FileWriter:-
+--@Step to write the data in to a file:-
+ Step-1:Create an instance of file class by specifying the file name.
+ Step-2:Create an instance of fileWriter class and pass the object of fileWriter.
+ Step-3:Invoke write() by specifying the data and to be store invoke flush().
+ Step-4:Invoke close() with in finally block.
+
+ Note:
+   ->fileWriter->opens the file in write mode.
+   ->file present->opens the existing file in write mode,but already existing data is overridden.
+   ->file not present->create a new file and opens the file in write mode.
+
+ -->FileReader
+ --@Step to read the data from a file:-
+ Step-1:Create an instance of file class by specifying the file name.
+ Step-2:create an instance of fileReader class by passing the file object to the constructor of fileReader.
+ Step-3:Define business logic to read the data from a file using read().
+ Step-4:Optionally close the fileReader object at the last.
+
+  Note:
+    ->fileReader->opens the file in read mode.
+    ->file present->opens the existing file in read mode.
+    ->file not present->throws an exception as fileNotFoundException.
+
+

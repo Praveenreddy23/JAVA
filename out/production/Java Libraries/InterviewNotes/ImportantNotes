@@ -1,0 +1,15 @@
+-->Explain final,finally,finalize:
+  1)final:
+    ->final is a keyword
+    ->We can use with a Variable,Method and Class.
+    ->If there is a final variable is act as a constant means we cannot reinitialize.
+    ->If there is a final Method it cannot be overridden but it can be inherited.
+    ->If there is a final class cannot be inherited.
+
+  2)finally:
+   ->finally is a block used during exception handling.
+
+ 3)finalize:
+  ->finalize is a method used during garbage collection that is when object
+    getting removed(Garbage collected) just before
+    finalize method will executed.

@@ -1,0 +1,36 @@
+--@MultiThreading:-
+  ->Two or more thread are accessing same object is called multiThreading.
+  ->Or MultiThreading is a process to execute multiple threads at the same time
+       without dependency of other threads called multithreading.
+  ->If two or more threads accessing same object at the same time then it may lead
+     for a problem called RACE condition.
+
+  -Race Condition:-
+    ->Multiple threads trying to access same object at same time is called as race cond.
+    ->Race condition can be overcome by using Thread Synchronization.
+
+  -->Thread Synchronization:-
+    ->Thread Synchronization is executing threads in the sequential order,
+      Where one thread will execute only after other thread completes the execution.
+
+  -->Thread Synchronization can be achieved in 2 ways:-
+    1)Using Synchronization method.
+    2)Using Synchronization Blocks.
+
+  1)Synchronized Method:-
+  ->Any method which is declared by using synchronized keyword is called as Synchronized method.
+
+  2)Synchronized Block:-
+  ->Synchronized block will lock the given object until the thread complete its execution using the
+    given object this prevents the other threads accessing the same object at the same time and hence
+    race condition is avoided.
+
+  ->Syntax:-
+    Synchronized(Object_ref)
+    {
+        stmt..
+        stmt..
+        stmt..
+    }
+  ->Synchronized block are used to perform thread safe operations on those objects
+    whose class is not thread safe.

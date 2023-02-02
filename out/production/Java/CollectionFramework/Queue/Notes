@@ -1,0 +1,60 @@
+--@<<Queue>> :
+   ->The Queue interface is present in java.util package
+   ->Queue extends the Collection interface
+   ->Queue is used to hold the elements about to be processed in FIFO(First In First Out) order.
+   ->Queue is Thread safe
+
+  --@Features of Queue:
+    ->Store and process element in FIFO.
+    ->No Index
+    ->Duplicate is Allowed.
+    ->Null not Allowed.
+
+  --@There are two Operations:
+    1)Enqueue ->Adding of element at Tail end.
+    2)Dequeue ->Removing element from Head end.
+
+
+  --@Implementation class of Queue:
+    1.LinkedList
+    2.PriorityQueue
+
+  1)LinkedList:
+    ->LinkedList implements queue interface methods and also List interface method.
+    ->linkedList provides implementation to store the elements with index and also allows to perform queue based operation.
+  -->concrete methods available only in LinkedList:
+    1.public boolean addFirst(Object e)
+    2.public boolean addLast(Object e)
+    3.public Object getFirst()
+    4.public object getLast()
+    5.public object removeFirst()
+    6.public object removeLast()
+
+  2)Priority Queue:
+  ->Priority queue is a class which implements queue interface which is of pure queue.
+  ->It implements two marker interface 1)Serializable
+                                       2)Cloneable
+  ->Underlined DS of Queue is LinkedList Queue
+  ->The Default capacity of priority queue is 11.
+  ->It grows one node at a time.
+
+ --@Features of Priority queue
+    ➢ Size is dynamic.
+    ➢ We can store heterogeneous type of data.
+    ➢ It is not indexed.
+    ➢ It allows duplicates.
+    ➢ It is auto sorted.
+    ➢ Since it is not indexed type of collection, we cannot fetch the elements uponindex.
+    ➢ In priority queue to fetch the element we should use poll ( ) and peek ( ).
+
+ -->Poll ( ) method
+      ->Poll ( ) method is non – static member of the queue class , which helps to
+        fetch the top most element of the queue and remove the element from the queue
+        and reduce the size of the queue by 1.
+
+ -->Peek ( ) method
+      ->Peek ( ) method is non – static method of the priority queue class , which
+        helps to fetch the top most element of the queue and it will not reduce the size of
+        the queue by 1.
+
+

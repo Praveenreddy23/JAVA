@@ -1,0 +1,11 @@
+--@forEach() : Method
+ ->Java provides a new method forEach() to iterate the elements.
+ ->It is defined in Iterable and Stream interface.
+ ->It is a default method defined in the Iterable interface.
+ ->Collection classes which extends Iterable interface can use forEach loop to iterate elements.
+
+ ->This method takes a single parameter which is a functional interface.
+    So, you can pass lambda expression as an argument.
+
+  --@Syntax:
+    default void forEach(Consumer<super T>action)

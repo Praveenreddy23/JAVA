@@ -1,0 +1,99 @@
+--@<<Map>> :
+ ->Map is a part of collection Framework which does not extends the collection interface.
+ ->Map is an interface,Which belongs to java.util package.
+ ->Whenever we want to store upon Key and Value then we should go for Map.
+ ->Map is used to organize the data in term of key and value pair.
+      1.Keys can not be Duplicated.
+      2.Values can be Duplicated.
+
+ --@Features of Map :
+    1.Size is dynamic.
+    2.It can store heterogeneous type of data.
+    3.It stores the elements upon keys and values.
+    4.It cannot have duplicates keys.
+    5.We can have duplicates Values.
+    6.Key - value can be any type of Object.
+
+ -->The Implementation classes of the <<Map>> are:
+          1.HashMap->Not Thread Safe(Not Synchronised)
+          2.LinkedHashMap
+          3.TreeMap
+          4.HashTable ->Thread Safe(Synchronised)
+ -->One Key and value together we call it as ENTRY, Therefore in order Map is a Collection ENTRIES.
+
+ --@ Map Hierarchy :
+
+                                <<Map>>
+                     HashMap          <<SortedMap>>    HashMap
+                 LinkedHashAMap       <<NavigableMap>>
+                                         TreeMap
+
+ -->Important methods used WRT Maps:
+   1.put()-> is used to add Key and Value inside Map.
+   2.get()-> is used to get an Value based on the Key Specified.
+   3.clear()->is used to remove all the objects from the collection.
+   4.isEmpty()->is used to check if the collection is empty or not
+   5.remove()->is used to remove an value based on the Key specified
+   6.containsKey()->is used to check if the Key is Present or not.
+   7.containsValue()->is used to check if the value is present or not.
+   8.keySet()
+
+ 1)HashMap :
+  -->Hash map is a class which implements map interface.
+   1.Pre-defined class in java.util package.
+   2.Insertion order is not Maintained.
+   3.Underlined Data Structure is HashTable.
+
+ -->Features of Hash Map
+    ➢ Size is dynamic.
+    ➢ It can store heterogeneous type of data.
+    ➢ It stores the elements upon keys and values.
+    ➢ It cannot have duplicates keys.
+    ➢ We can have duplicates Values.
+    ➢ It will not follow order of insertion.
+
+ 2)LinkedHashMap :
+   -->LinkedHash map is a class which implements map interface.
+    1.Pre-defined class in java.util package.
+    2.JDK 1.4
+    3.Insertion order is  Maintained.
+    4.Underlined Data Structure is HashTable and LinkedList.
+
+  --@Features of Linked Hash Map
+     ➢ Size is dynamic.
+     ➢ It can store heterogeneous type of data.
+     ➢ It stores the elements upon keys and values.
+     ➢ It cannot have duplicates keys.
+     ➢ We can have duplicates Values.
+     ➢ It will follow order of insertion.
+
+  3)TreeMap :
+    -->TreeMap is a class which implements Map interface.
+     1.Pre-defined class in java.util package.
+     2.JDK 1.2
+     3.Maintained Sorted order ie.(Sorting based on key in ascending order).
+     4.Underlined Data Structure is Binary Tree.
+
+   --@Features of TreeMap
+      ➢ Size is dynamic.
+      ➢ It can store heterogeneous type of data.
+      ➢ It stores the elements upon keys and values.
+      ➢ It cannot have duplicates keys.
+      ➢ We can have duplicates Values.
+      ➢ It is completely auto sorted based on key.
+      ➢ It sorts based on ASCII values.
+
+  -->HashMap-> stores the element in key-value pair.it allows null as a key also value.
+    ->it doesn't preserve the order of Insertion.
+  -->The LinkedHashMap-> is a subclass of HashMap which preserves the order of insertion.
+  -->HAshTable-> allows Key-Value pair but key and value should not be null
+    ->it is a ThreadSafe class.
+    ->HashTable is also called as Synchronized Map.
+  -->TreeMap-> is a type of Map which implements SortedMap according to key.
+     Hence the elements in TreeMap are Sorted in Natural ascending Order.
+
+
+
+
+
+

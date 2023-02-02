@@ -1,0 +1,28 @@
+--@Garbage Collection:
+  ->Means unreferenced Object.
+  ->It is a way to destroy the unused Object.
+  ->It is the process of reclaiming the runtime unused memory automatically.
+
+-->Advantages:
+   ->Makes Memory Efficient
+   ->Automatically done
+
+ -@What is the meaning of unreferenced Object?
+   1)By nulling the reference
+     Demo a = new Demo();
+       a = null;
+   2)By assigning reference to another
+     Demo a = new Demo();
+     Demo b = new Demo();
+        a = b;
+   3)By anonymous Object
+       new Demo();
+
+ --@Methods:
+  1)finalize():-
+      ->Just before destroying any object, the garbage collector always calls finalize()
+         method to perform clean-up activities on that object. This process is known as Finalization in Java.
+  2)gc():-
+      ->It is used to invoke the  garbage collector to perform cleanup processing.
+      ->The gc() found in System and Runtime classes.
+      ->It is static method which is used to call finalize before destroying the object.

@@ -1,0 +1,27 @@
+--@Vector List:
+ ->Vector is a pre-defined class present in java.util package.
+ ->Vector List is a class which Implements List Interface.
+ ->It is Legacy Collection (Very Old)
+ ->Vector is a Implementation class of ListInterface.
+ ->The Vector is Implemented Using ReSizable/Growable Array DataStructure.
+ ->The default capacity of vector is 10.
+ ->The Incremental capacity of Vector is  (currentCapacity*2).
+
+--@Features of vector list:
+    ➢ Size is dynamic.
+    ➢ We can store heterogeneous type of data.
+    ➢ It is indexed type of collection.
+    ➢ It allows duplicates.
+    ➢ It allows null.
+    ➢ It will follow order of insertion.
+    ➢ Since it is indexed type of collection we can do random access.
+    ➢ It will grow its size by 100 %.
+    ➢ It is synchroni zed.(Thread safe).
+    ➢ Since it is synchronized, the performance is slow.
+
+--@Difference Between ArrayList and Vector:
+            ArrayList:                   Vector:
+           1.JDK 1.2                    1.JDK 1.0
+           2.IC = (CC*3)/2 +1           2.IC = CC*2
+           3.3 Constructors             3.4 Constructors
+           4.Not Thread Safe            4.Thread Safe (Synchronized)

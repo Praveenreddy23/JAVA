@@ -1,0 +1,15 @@
+3)TreeMap :
+  -->TreeMap is a class which implements Map interface.
+   1.Pre-defined class in java.util package.
+   2.JDK 1.2
+   3.Maintained Sorted order ie.(Sorting based on key in ascending order).
+   4.Underlined Data Structure is Binary Tree.
+
+ --@Features of TreeMap
+    ➢ Size is dynamic.
+    ➢ It can store heterogeneous type of data.
+    ➢ It stores the elements upon keys and values.
+    ➢ It cannot have duplicates keys.
+    ➢ We can have duplicates Values.
+    ➢ It is completely auto sorted based on key.
+    ➢ It sorts based on ASCII values.

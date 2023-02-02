@@ -1,0 +1,6 @@
+ --@LinkedList:
+    1.LinkedList()
+    2.LinkedList(Collection c)
+
+
+    1. LinkedList a = new LinkedList();

@@ -1,0 +1,14 @@
+ 1)HashMap :
+  -->Hash map is a class which implements map interface.
+   1.HashMap is a Pre-defined class in java.util package.
+   2.JDK 1.2
+   3.Insertion order is not Maintained.
+   4.Underlined Data Structure is HashTable.
+
+ -->Features of Hash Map
+    ➢ Size is dynamic.
+    ➢ It can store heterogeneous type of data.
+    ➢ It stores the elements upon keys and values.
+    ➢ It cannot have duplicates keys.
+    ➢ We can have duplicates Values.
+    ➢ It will not follow order of insertion.

@@ -1,0 +1,41 @@
+-->throw keyword :
+   ->Used to throw an object of Throwable type.
+    -> throw keyword is used to throw the exception explicitly by the
+        programmer according to the application requirements
+    ->throw is a keyword in order to invoke an object of exception.
+    ->throw is generally used with custom exception.
+        Syntax: throw e;
+                e --> an Object of throwable type
+             Ex:
+                1)throw new ArithmeticException();
+                2)ArithmeticException e1 = new ArithmeticException();
+                    throw e1;
+                3)throw new String()--> Error bcz String is not a type of throwable
+             // throw new ExceptionName();
+
+-->Rules
+    1)Can throw only throwable type object.
+    2)Only onr object can thrown.
+    3)Must be used in Method body or Constructor body.
+
+
+-->throws keyword :
+    -> throws keyword is used to propagate checked exceptions explicitly
+       by the programmer.
+    ->throws is a indication to the caller about the possibility of an exception.
+    ->throws is used to propagate an exception.
+    ->throws is generally used with checked exception.
+    ->typically we use throws with methods, and we can use
+      throws wrt constructor as well.
+
+ --@Difference b/w throw and throws
+    THROW
+    1. Throw is used to throw the instance of throwable type.
+    2. Throw should be always developed in method body.
+    3. Throw is used to create the exception.
+    4. Throw can throw only 1 object at a time.
+    THROWS
+    1. Throws is used to propagate the exception from 1 method to the called method.
+    2. Throws should be developed in method declaration.
+    3. Throws is used to propagate the exception.
+    4. Throws can propagate more than 1 exception

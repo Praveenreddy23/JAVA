@@ -1,0 +1,177 @@
+--@Collection Framework :
+
+-@Data Structure :
+  ->Data Structure is a way of storing or organizing the data.
+  ->Data Structure is the arrangement of a group of object.
+   Eg:-> Stack,Queue,Array,LinkedList,Tree,HashTable......
+
+-@Collection :
+  ->Collection is a pre-defined interface present in java.util package.
+  ->Collection is a container used to store a group of object.
+  ->Collection is introduce from JDK 1.2.
+
+-@Collections :
+  ->Collections is a pre-defined Class present in java.util package.
+  ->it has inbuilt methods like sort , search.
+
+     Collections (c)
+    -> Sort ( )
+    -> Binary search(
+
+--@ Difference between Array and Collection :
+          Array                                  Collection
+  1.Homogeneous in nature.              1.Homogeneous and Heterogeneous
+  2.Fixed Size.                         2.Dynamic Size.
+  3.Does not have any methods.          3.Many pre-defined methods.
+  4.Does not support Generics.          4.Generics supported.
+
+
+--@Pre-defined method in Collection Interface :
+  1. add() - add() will add an object into the collection
+  2. addAll()-addAll() will add one collection into another collection
+  3. remove()-remove() will remove an object from the collection based on index
+  4. removeAll()-removeAll() will remove one collection from another collection
+  5. contains()-contains() checks if the object is present in the collection or not
+  6. containsAll()-containsAll() will check if one collection is present in another collection or not
+  7. isEmpty()-isEmpty() will check if the collection is empty or not
+  8. clear()-clear() will remove all the objects present in the collection
+  9. size()-size() is used to count the number of object present in the collection
+  10. iterator()-iterator() is used to traverse a group of object.
+       Syntax :public Iterator<E> iterator();
+
+
+--@Collection Hierarchy :
+                                   <<Iterable>>
+                                        |
+                                  <<Collection>>
+        1)  <<List>>                 2)  <<Queue>>                   3) <<Set>>
+       ArrayList   Vector  LinkedList     PriorityQueue    HashSet      <<SortedSet>>
+                    Stack                               LinkedHashSet     <<NavigableSet>>
+                                                                             TreeSet
+
+1)<<List>> :
+ ->List is a pre-defined Interface present in java.util package.
+ ->List was introduce from JDK1.2.
+ ->The implementation class of List interface are as follows :
+  1.ArrayList
+  2.Vector
+  3.Stack
+  4.LinkedList
+
+--@Specification of List Interface :
+     1.Insertion order is maintain.
+     2.Duplicates of object are allowed.
+     3.Indexed based start from 0.
+     4.null can be inserted.
+
+--@Important method present in List Interface :
+    1.get()- get() will return the object based on index position.
+    2.indexOf()- indexOf() will find the index position of an object and first occurrence in case of duplication.
+    3.lastIndexOf()- lastIndexOf() is used to find the last index position of an object.
+    4.add(index,value)- is used to add an object based on the index position already existing object gets shifted to the next position.
+    5.set(index,value)- is used to set an object based on the index position already existing object gets overridden.
+
+ -->Object creation :
+  List l = { new ArrayList();
+             new LinkedList();
+             new Vector();
+             new Stack();
+
+1.ArrayList :
+    -> ArrayList is a pre-defined class present in java.util package.
+    ->The initial capacity of ArrayList is 10.
+    ->The incremental capacity of ArrayList is (current capacity*3/2)+1.
+    ->The Underlined data stature from ArrayList is Resizeable Array / Growable Array.
+    ->Sequential Memory Allocation.
+    ->Contains 3 Constructors.
+       1.ArrayList();
+       2.ArrayList(int Initial Capacity);
+       3.ArrayList(Collection c);
+
+2.LinkedList:
+   -> ArrayList is a pre-defined class present in java.util package.
+   -> The Underlined Data structure doubly LinkedList.
+   -> Non-sequential Memory Allocation.
+   -> LinkedList Has 2 Constructors.
+      1.LinkedList();
+      2.LinkedList(Collection c);
+
+    --@When you will go for linked list type of collection ?
+       ->Whenever we want proper order of insertion , then we should go for linked list.
+       ->Linked list is a class which have dual property.
+
+3.Vector List:
+   ->Vector is a pre-defined class present in java.util package.
+   ->Vector List is a class which Implements List Interface.
+   ->It is Legacy Collection (Very Old)
+   ->Vector is a Implementation class of ListInterface.
+   ->The Vector is Implemented Using ReSizable/Growable Array DataStructure.
+   ->The default capacity of vector is 10.
+   ->The Incremental capacity of Vector is  (currentCapacity*2).
+   ->Vector Has 4 Constructor:
+     1.Vector();
+     2.Vector(int Initial Capacity);
+     3.Vector(int Initial Capacity,int Incremental Capacity );
+     4.Vector(Collection c);
+
+-------------------------------------------------------------------------------------
+
+2)<<Set>> :
+  ->Set is a pre-defined Interface present in java.util package.
+  ->List was introduce from JDK1.2.
+  ->A Set is a type of collection which is used to store only unique elements.
+  ->Set Doesn't  allows duplicate elements
+  ->Elements are stored without index.
+  ->Null insertion is allowed.(Only one null is allowed Since duplicate is not allowed in set)
+  ->Set elements can be retrieved by using Iterator bcz there is no specific methods to access the set.
+  ->The implementation class of Set Interface are:
+    1.HashSet
+    2.LinkedHashSet
+    3.TreeSet
+ -->HashSet has a child class or Subclass known as LinkedHashSet.
+ -->HashSet stores unique element but doesn't preserve order of insertion.
+ -->LinkedHashSet is a type of HashSet which preserve order of insertion.
+ -->TreeSet is a type of SortedSet Where the elements are stored in a Sorted Order (Ascending Order).
+
+--@Object Creation:
+Set s = { new HashSet
+          new LinkedHashSet
+          new TreeSet
+
+ --@ When do we go for set type of collection ?
+    --> Whenever we want to store the element not upon index and not allowing
+        duplicates, then we should go for set type of collection.
+
+
+  1.HashSet :
+   ->HashSet is a implementation class of Set Interface.
+   ->HashSet is a pre-defined class present in java.util package.
+   ->Underlined DataStructure is HashTable/HashMap.
+   ->The Initial Capacity of HashSet is 16.
+   ->HashSet grows based on the load factor or fill ratio.
+   ->default load factor is 0.75 or 75%.
+
+  2.LinkedHashSet :
+   ->The LinkedHashSet is a child class of HashSet class it is implemented with
+     a hybrid DS which is a combination of HashTable and LinkedList
+     ->the HashTable Structure is used for unique storage of elements whereas
+       LinkedList is used to preserve the order of insertion.
+   ->Rest all the properties are same as HashSet.
+   ->It will follow order of insertion.
+
+  3.TreeSet :
+   ->TreeSet is a implementation class of SortedSet.
+   ->Underlined DS is Binary Tree.
+   ->Traversing Order LeftNodeParentNodeRightNode
+   ->The elements in the TreeSet are arranged in the Natural Sorting order (Ascending order).
+   ->TreeSet doesn't allow NULL insertion.
+   ->If NULL is a first element of the TreeSet , then it allows but that
+     treeset will not allow another element.it throws NULLPOINTEREXCEPTION.
+   ->All the elements of the tree set must be of same type bcz the tree set
+     sorts the elements and stores it in the TreeStructure.
+   ->We can add only the Object which are comparable type to the tree set
+     otherwise the treeset throws CLASSCASTEXCEPTION.
+
+
+
+

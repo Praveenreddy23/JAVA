@@ -1,0 +1,19 @@
+--@ How can we compare User-Defined Object?
+
+   <<Comparable>>
+ 1.Comparable is a pre-Defined Interface present in java.lang package.
+ 2.Comparable was introduce from JDK 1.2.
+ 3.<<Comparable>> has an abstract method called as compareTo().
+ 4.<<Comparable>> is used to compare objects and sort them.
+ 5.Default sorting.
+
+ ->Syntax: public int compareTo(Object o);
+
+ compareTo() returns  -> +1 if it is greater than
+                      -> -1 if it is lesser than
+                      -> 0 if it is same Object
+
+ ->Rules to make the object as comparable
+ 1.class has to implement comparable interface
+ 2.specify the Generics type of which object we are going to compare.
+ 3.Override the compareTo() by specifying the business logic of comparing or sorting.

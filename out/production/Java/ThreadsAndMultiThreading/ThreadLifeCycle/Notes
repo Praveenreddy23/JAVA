@@ -1,0 +1,32 @@
+--@Thread Life Cycle:-
+  ->As we know a thread is well known for independent execution during the life cycle
+    A thread can move from different states
+
+    [New]->[Runnable]->[Running]->
+
+
+    1)New state (Born)
+    2)Runnable state (Ready)
+    3)Running state (Execution)
+    4)Waiting state (Blocked)
+    5)Dead state(Exit)
+
+  1)New state:-
+     ->When new thread is created then it is in new state.
+
+  2)Runnable:-
+    a)A thread which is ready to run that moves to runnable state
+    b)In this state thread might be a ready to run or it might be running at instance of time.
+
+  3)Running:-
+      ->A thread in execution after thread scheduler select it, it will be in running state.
+
+  4)Waiting:-
+    When a thread is temporarily inactive then it is one of the following state
+        1)wait state
+        2)block state
+
+  5)Dead:-
+     ->A thread after exiting from run() method will be in dead state. We can use stop() method to forcefully killed a thread.
+
+

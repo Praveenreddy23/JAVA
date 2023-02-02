@@ -1,0 +1,25 @@
+2)<<Set>> :
+  ->Set is a pre-defined Interface present in java.util package.
+  ->Set  was introduce from JDK1.2.
+  ->A Set is a type of collection which is used to store only unique elements.
+  ->Set Doesn't  allows duplicate elements
+  ->Elements are stored without index.
+  ->Null insertion is allowed.(Only one null is allowed Since duplicate is not allowed in set)
+  ->Set elements can be retrieved by using Iterator bcz there is no specific methods to access the set.
+  ->The implementation class of Set Interface are:
+    1.HashSet
+    2.LinkedHashSet
+    3.TreeSet
+ -->HashSet has a child class or Subclass known as LinkedHashSet.
+ -->HashSet stores unique element but doesn't preserve order of insertion.
+ -->LinkedHashSet is a type of HashSet which preserve order of insertion.
+ -->TreeSet is a type of SortedSet Where the elements are stored in a Sorted Order (Ascending Order).
+
+--@Object Creation:
+Set s = { new HashSet
+          new LinkedHashSet
+          new TreeSet
+
+ --@ When do we go for set type of collection ?
+    --> Whenever we want to store the element not upon index and not allowing
+        duplicates, then we should go for set type of collection.

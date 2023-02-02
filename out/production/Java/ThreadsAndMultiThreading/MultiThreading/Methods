@@ -1,0 +1,76 @@
+--@Methods in multithreading:
+ 1)Sleep() Method:-
+   ->Sleep is a static method of thread class .
+   ->Sleep method to put a thread into temporary waiting state.
+   ->Sleep methods throws checked exception That is, InterruptedException.
+
+  ->Syntax:
+     Thread.Sleep(1000);->milli seconds
+     or
+     Thread t = new Thread();
+     t.sleep(1000);
+
+ 2)join() Method:
+   ->The main purpose of join method is to put the thread into temporary waiting state.
+   ->If we want to execute complete any particular thread among all the threads available in the thread pool.
+   ->Join method also throws checked exception That is, InterruptedException.
+
+ 3)Suspend():-
+   ->The suspend method is to put thread from running state to waiting state.
+     Ex:
+        t.start();->Execute
+        t1.start();->Not Execute
+        t2.start();->Execute
+
+        t1.suspend();
+
+ 4)Resume():-
+   ->Resume method is used to resume a suspended thread from waiting state to runnable state.
+      Ex:
+         t1.resume();
+
+ 5)yield():-
+   ->yield is a method of thread class that allow us to run another thread which has
+     same priority by passes its current thread.
+
+     Ex:
+       t.start();->Execute
+       t1.start();->Stop
+       t2.start();->Execute
+
+       t1.yield();
+
+ 6)Stop():-
+   ->Stop is a method of thread class which is used to terminate a thread permanently.
+    Ex:
+      t.start();
+      t1.start();//t1.stop();
+      t2.start();
+
+ 7)isAlive():-
+   ->isAlive() is a pre-defined method of thread class through which we can
+      verify weather a thread isAlive or Not.
+   Note: ->If thread isAlive then it will return true otherwise false.
+         ->If we use isAlive method before the start method then it will print
+           false but after the start method it will print true.
+
+ 8)interrupt():-
+   ->interrupt() is a pre-defined method of thread class that is used to interrupt the thread.
+   Note:->if any thread is in sleeping or blocked state then we can easily
+           interrupt the execution of thread by throwing interruptedException.
+        ->If thread not on sleeping or waiting state then thread execute normally.
+
+ --@What is thread priority:
+   ->It is possible to assign the priority of thread.
+   ->java thread class has provided two pre-defined methods:
+     1)setPriority()
+     2)getPriority()
+   ->The thread class has also provided three pe-defined final static variable and
+      its value lie between 1 to 10;
+     1)Thread.MIN_PRIORITY -->1
+     2)Thread.NORM_PRIORITY -->5
+     3)Thread.MAX_PRIORITY -->10
+
+   1)setPriority()->
+
+

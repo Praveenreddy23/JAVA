@@ -1,0 +1,14 @@
+2)LinkedHashMap :
+  -->LinkedHash map is a class which implements map interface.
+   1.Pre-defined class in java.util package.
+   2.JDK 1.4
+   3.Insertion order is  Maintained.
+   4.Underlined Data Structure is HashTable and LinkedList.
+
+ --@Features of Linked Hash Map
+    ➢ Size is dynamic.
+    ➢ It can store heterogeneous type of data.
+    ➢ It stores the elements upon keys and values.
+    ➢ It cannot have duplicates keys.
+    ➢ We can have duplicates Values.
+    ➢ It will follow order of insertion.

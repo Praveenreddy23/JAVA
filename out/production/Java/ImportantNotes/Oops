@@ -1,0 +1,7 @@
+-->Object-oriented Programing:-
+  ->Object --> instance of class.
+  ->Class --> Blueprint of an Object.
+  ->Encapsulation --> Protecting our Data.
+  ->Polymorphism --> Different behaviour in different instances.
+  ->Abstraction --> Hiding our irrelevant data.
+  ->Inheritance --> One property of the object is acquiring another property of an object.

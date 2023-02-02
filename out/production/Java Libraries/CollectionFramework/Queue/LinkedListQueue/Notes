@@ -1,0 +1,10 @@
+1)LinkedList:
+    ->LinkedList implements queue interface methods and also List interface method.
+    ->linkedList provides implementation to store the elements with index and also allows to perform queue based operation.
+  -->concrete methods available only in LinkedList:
+    1.public boolean addFirst(Object e)
+    2.public boolean addLast(Object e)
+    3.public Object getFirst()
+    4.public object getLast()
+    5.public object removeFirst()
+    6.public object removeLast()
