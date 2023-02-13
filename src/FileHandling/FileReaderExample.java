@@ -9,6 +9,7 @@ public class FileReaderExample {
     public static void main(String[] args)  {
        try{
            File f = new File("D:/java.txt");
+           System.out.println(f.getAbsolutePath() );
            FileReader fr = new FileReader(f);
         int ch = fr.read();
         while (ch != -1){

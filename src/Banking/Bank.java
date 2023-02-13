@@ -26,6 +26,7 @@ class BankImpl implements Bank{
     @Override
     public void withdraw(int amount) {
         if (amount <= balance) {
+
             System.out.println("Withdrawing Rs: " + amount);
             balance -= amount;
             System.out.println("Amount Withdrawn successfully!!");
@@ -33,7 +34,7 @@ class BankImpl implements Bank{
             try {
                 throw new InsufficientBalanceException("Insufficient Balance");
             }catch (Exception e){
-                e.getMessage();
+                System.out.println( e.getMessage());
             }
         }
     }
@@ -49,7 +50,7 @@ class MainSolution {
         System.out.println("----------------------------");
 
         Scanner scan = new Scanner(System.in);
-        Bank b = new BankImpl(5000);
+        Bank b = new BankImpl(0);
         while (true) {
             System.out.println("1)Deposit\n2)Withdraw\n3)CheckBalance\n4)Exit");
             System.out.println("Enter you are choice");
@@ -66,7 +67,7 @@ class MainSolution {
                 }
                 case 3 -> System.out.println("Available Balance: " + b.checkBalance());
                 case 4 -> {
-                    System.out.println("Get lost dont come again");
+                    System.out.println("Get lost don`t come again");
                     System.exit(0);
                 }
                 default -> System.out.println("Invalid Choice");
@@ -77,7 +78,7 @@ class MainSolution {
 
 }
 class InsufficientBalanceException extends RuntimeException{
-    private String message;
+    private final String message;
 
     public InsufficientBalanceException(String message) {
 

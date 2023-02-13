@@ -23,7 +23,7 @@ public class ComparatorExample {
 
         SortAge age = new SortAge();
 //Pass the object of the class which has the sorting logic to the constructor of the TreeSet.
-        TreeSet<ComparatorExample> t = new TreeSet(age);
+        TreeSet<ComparatorExample> t = new TreeSet<>(age);
 
         t.add(s);
         t.add(s1);
