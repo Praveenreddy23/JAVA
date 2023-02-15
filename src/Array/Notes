@@ -1,0 +1,35 @@
+--@ Array:-
+   -> Array is a group of same type of data which has a fixed length and index to identify every container uniquely.
+   -> Or, Array is a container in order to store a group of elements or data.
+   Or,
+   -> Array is a collection of object,
+   -> Array is homogeneous(Only similar type of data can stored) in nature or types of data,
+   -> Array is fixed size,
+   -> Array is  indexed based and the indexed position always starts from 0.
+
+  1)Array Declaration:-
+    -> Syntax: dataType[] ArrayName;
+       Ex:     -> int []      a;
+               -> double[]    b;
+
+  2)Array Creation:-
+    -> Syntax: ArrayName = new dataType[size];
+       Ex:     -> a      = new   int    [2];
+               -> b      = new   double [3];
+
+  3)Array Declaration and Creation:-
+    -> Syntax: dataType[] ArrayName = new dataType[size];
+       Ex:     -> int[]     a       = new   int    [2];
+               -> double    b       = new   double [3];
+               ->String[]   s       = new   String [4];
+
+  4)Array Initialization:-
+    -> Syntax: ArrayName[Index] = value;
+       Ex:     -> a      [1]    = 23;
+               -> b      [2]    = 32;
+               -> s      [3]    = "Java";
+
+  5)Array Declaration and Initialization:-
+    -> Syntax: dataType[] ArrayName = {v1, v2, v3.....};
+       Ex:     int[]       a        = {10, 20, 30, 40};  * Array.length -> a.length = 4.
+               String[]    s        = {"Java", "Sql", "Web"};

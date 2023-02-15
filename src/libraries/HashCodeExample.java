@@ -1,5 +1,5 @@
 package libraries;
-/*
+/**
 --@hashCode()
   ->hashCode() method return a unique id or no. for an object.
   ->hashCode() is used to identify an object uniquely.

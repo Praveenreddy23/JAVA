@@ -1,5 +1,5 @@
 package libraries;
-/*1.toString() method:
+/**1.toString() method:
         ->toString() will return String representation of an Object.
         Syntax:public String toString()
         ->When we print the reference variable or Object reference implicitly toString() gets called.

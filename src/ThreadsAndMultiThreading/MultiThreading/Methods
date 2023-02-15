@@ -65,12 +65,14 @@
    ->java thread class has provided two pre-defined methods:
      1)setPriority()
      2)getPriority()
+
    ->The thread class has also provided three pe-defined final static variable and
       its value lie between 1 to 10;
-     1)Thread.MIN_PRIORITY -->1
-     2)Thread.NORM_PRIORITY -->5
-     3)Thread.MAX_PRIORITY -->10
+     1.public static int MIN_PRIORITY: It is the maximum priority of a thread. The value of it is 1.
+     2.public static int NORM_PRIORITY: It is the normal priority of a thread. The value of it is 5.
+     3.public static int MAX_PRIORITY: It is the minimum priority of a thread. The value of it is 10.
 
-   1)setPriority()->
+   1)setPriority()->The setPriority() method of thread class is used to change the thread's priority.
+                    Every thread has a priority which is represented by the integer number between 1 to 10.
 
 

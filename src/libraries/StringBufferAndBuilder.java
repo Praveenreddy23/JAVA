@@ -1,5 +1,5 @@
 package libraries;
-/*
+/**
 --@ StringBuffer:->
     ->StringBuffer is a pre-defined final class present in java.lang package.
     ->StringBuffer introduce from JDK1.0

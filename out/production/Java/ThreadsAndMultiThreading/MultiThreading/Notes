@@ -1,5 +1,6 @@
 --@MultiThreading:-
-  ->Two or more thread are accessing same object is called multiThreading.
+  ->Multithreading in Java is a process of executing multiple threads simultaneously.
+  ->Or Two or more thread are accessing same object is called multiThreading.
   ->Or MultiThreading is a process to execute multiple threads at the same time
        without dependency of other threads called multithreading.
   ->If two or more threads accessing same object at the same time then it may lead

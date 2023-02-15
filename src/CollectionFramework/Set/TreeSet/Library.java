@@ -33,7 +33,7 @@ public class Library {
         t.add(s2);
         t.add(s3);
 
-        Iterator i = t.iterator();
+        Iterator<Library> i = t.iterator();
         while (i.hasNext()) {
             Object o = i.next();
             System.out.println(o);

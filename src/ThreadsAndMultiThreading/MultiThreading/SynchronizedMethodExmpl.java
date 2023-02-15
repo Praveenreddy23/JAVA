@@ -7,15 +7,15 @@ public class SynchronizedMethodExmpl {
     //task class
     synchronized public void printNumberAsc()
     {
-        for (int i = 1; i < 5; i++)
+        for (int i = 0; i < 5; i++)
         {
-            System.out.println(i);
+            System.out.print(i+" ");
         }
     }
     synchronized public void printNumberDec()
         {
             for (int i = 5; i >=0 ; i--) {
-                System.out.println(i);
+                System.out.println(i+" ");
             }
         }
 }

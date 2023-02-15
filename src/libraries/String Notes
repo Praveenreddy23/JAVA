@@ -36,7 +36,7 @@
 --@ Disadvantage:-> If you reinitialize same reference variable for n number
                      of times then it will result in creation of multiple
                      de-referenced objects which will occupy the memory space
-                     and may lead to OutofMemoryError.
+                     and may lead to Out-ofMemoryError.
 
 --@To overcome the disadvantage of immutable property java developers
    created two new classes

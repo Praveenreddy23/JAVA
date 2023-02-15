@@ -89,7 +89,7 @@ public interface Calculator {
 
     }
 }
-/*
+/**
 RULES FOR ABSTRACTION
 ->INTERFACE WITH ABSTRACT METHOD
 ->IS-A-RELATIONSHIP

@@ -33,7 +33,7 @@ class MyRunnable implements Runnable{
 }
 class MainMethod{
     public static void main(String[] args) {
-        //create a sub-class of thread
+        //create a subclass of thread
         MyThread  thread = new MyThread();
 
         //implements runnable interface and pass instance as an argument to thread constructor

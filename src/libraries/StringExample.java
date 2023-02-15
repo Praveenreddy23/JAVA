@@ -1,5 +1,5 @@
 package libraries;
-/*
+/**
 --#Note,
    --@ String class implements the following interfaces:->
       1)Serializable

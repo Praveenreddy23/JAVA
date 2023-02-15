@@ -1,5 +1,5 @@
 package libraries;
-/*
+/**
  # equals():->
   ->equals method used for content comparison.
   Syntax:public boolean equals(Object obj)

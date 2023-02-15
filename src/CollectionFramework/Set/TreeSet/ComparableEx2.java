@@ -22,7 +22,7 @@ public class ComparableEx2 implements Comparable<ComparableEx2> {
                 ", salary=" + salary +
                 '}';
     }
-
+/**
 //    @Override
 //    public int compareTo(ComparableEx2 o) {
 //        return this.id - o.id;
@@ -48,6 +48,7 @@ public class ComparableEx2 implements Comparable<ComparableEx2> {
 //        //Employee{id=1, name='salaga', salary=44.6}
 //        //Employee{id=2, name='saaga', salary=45.6}
 //    }
+ */
 
 
 //    DESCENDING ORDER:
@@ -75,7 +76,7 @@ public class ComparableEx2 implements Comparable<ComparableEx2> {
         }
 
 
-        Iterator itr = t.iterator();
+        Iterator<ComparableEx2> itr = t.iterator();
         while (itr.hasNext()){
             Object i = itr.next();
             System.out.println(i);

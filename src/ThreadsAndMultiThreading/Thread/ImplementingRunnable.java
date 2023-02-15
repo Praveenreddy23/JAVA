@@ -1,6 +1,6 @@
 package ThreadsAndMultiThreading.Thread;
 //By Implementing Runnable interface:
-public class ImplementingRunablei implements Runnable {
+public class ImplementingRunnable implements Runnable {
     @Override
     public void run(){
         //Define of thread
@@ -12,7 +12,7 @@ public class ImplementingRunablei implements Runnable {
 class ImplementsRun{
     public static void main(String[] args) {
         //Start execution
-        ImplementingRunablei i = new ImplementingRunablei();
+        ImplementingRunnable i = new ImplementingRunnable();
 
         Thread t = new Thread(i);
         t.start();
