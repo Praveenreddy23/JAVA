@@ -1,0 +1,348 @@
+                                             -:BASIC JAVA:-
+
+  -> Java is a high level programing language which is founded by JAMES GOSLING and Team,
+     in 1990 And they released official version of java in 1995.
+  -> Java is a classed based, high level, Object-Oriented programing language.
+  -> First version of java(JDK 1.0) was released on the year JAN-23-1996 by 'SUN MICROSYSTEMS'
+
+--> Features of Java:-
+   -> Simple and easy to learn
+   -> Open source
+   -> platform independent
+   -> Large library and framework
+   -> Object oriented programing language
+
+--> Structure of java or java workflow:-
+   Source Code:-
+    -> Once the developer receives the requirement developer team start working on it and write a
+       java program which is also known as source code. and save file as (FILENAME.JAVA).
+    -> To check any bugs developer will give the program to compile for complication purpose.
+
+   Compiles:-
+    -> Compiles check any bugs in the program and if it find any error it will throw complication error
+       to a developer for debugging purpose.
+    -> Now developer should debugs and give  it to compiles, this process repeat till compiles find no mistake
+        now compiles converts source code to a BYTECODE and save as (FILENAME.CLASS).
+
+   ByteCode:-
+    -> Byte code is an intermediate code which is non understandable  by machine nor human and bytecode is
+        platform independent, now you can run this byte code in any operating system with the help of JVM.
+
+   Java Virtual Machine(JVM):-
+    -> JVM reads the bytecode line by line and convert to machine understandable language with the help of
+       JIT(JUST IN TIME) compiles And JVM is platform dependent, means JVM used for windows can`t be used for
+         any operating system.
+
+--> Key Words:-
+   -> Key words are the pre-defined word which has it`s own meaning.
+   -> Key words should be written only in lowercase
+       eg: class, public, static, void etc...
+
+--> Identifiers:-
+   -> Identifiers are the name given for the java program.
+   -> In java identifiers are used to identify class, method, and  variable.
+
+  Rules of identifiers:-
+  -> Identifiers can be alpha-numeric -> Demo.java
+  -> Identifiers should not start with numeric -> 123Demo.java
+  -> $ and _ are the only 2 special character that can be used -> Demo$.java and Demo_.java
+  -> Identifiers can start with $ and _ -> $Demo.java and _Demo.java
+  -> Single _ is an invalid identifiers in java -> _.java
+  -> keywords cannot  be used as identifiers -> class.java
+
+--> Variables:-
+  -> Variable is the name of memory location where we stored different type of values.
+
+  Types of variables:-
+   -> local
+   -> static
+   -> instance
+   -> final
+
+  To use variable we have to follow 3 steps:-
+   -> Declaration
+   -> Initialization
+   -> utilization
+
+    -> Declaration:-
+      -> Declaration is a statement which written to specify the type of data to be stored in the given variable
+        Syntax: datatype variableName;
+
+    -> Initialization:-
+      -> It is a  statement which is written to store the data within a variable using a assignment operator(=)
+        Syntax: variableName = value;
+
+    -> Utilization:-
+      -> It is one or group of statement which is written to use the value in the variable to perform the operation
+
+
+--> DataType:-
+   -> Datatype specify the different type of values that are stored in the variable
+
+    Types of DataType:-
+    1) Primitive
+       -> Numeric:- byte, short, int, double, float, long
+       -> Non Numeric:- char, boolean
+    2) Non primitive
+       -> Class, String, Array etc..)
+  Note: String is not a datatype
+   DATATYPE             CAPACITY         DEFAULT VALUE
+   byte              8-bits or 1byte        0
+   short             16-bits or 2byte       0
+   int               32-bits or 4byte       0
+   long              64-bits or 8byte       0
+   float             32-bits or 4byte       0.0f
+   double            64-bits or 8byte       0.0
+   char              16-bits or 2byte       blank
+   boolean            1-bits               true,false
+
+--> Operators:-
+  -> Operators are the symbol which is used to perform some operation on the operands.
+
+   -> Arithmetic operator
+   -> Assignment operator
+   -> Relational / Comparison operator
+   -> Logical operator
+   -> Unary operator / increment/decrement operator
+   -> Bitwise operator
+   -> Concatenation operator
+
+ -> Arithmetic operator:-
+   -> (+) addition, (-) subtraction, (*) multiplication, (/) division, (%) modulus
+
+ -> Assignment operator:-
+   -> An Assignment operator is the operator used to assign a nwe value to a variable
+      =, +=, -=, *=, /=, %=
+
+ -> Relational / Comparison operator:-
+   -> Relational / Comparison operator will compare given 2 values and returns a boolean result.
+     <, >, <=, >=, ==, !
+
+ -> Logical operator:-
+   -> Logical operator are used to combine multiple boolean condition as one single condition.
+   -> Logical operator will always return a boolean result.
+   -> different type of Logical operators are:-
+     -> AND (&&)
+     -> OR (||)
+     -> XOR (^)
+   -> AND (&&):-
+     -> AND (&&) operator will return true if and only if the result of both the boolean conditions
+          result is true and in the all other case return false.
+
+   -> OR (||):-
+     -> OR (||) operator will return false if and only if the result of both the boolean condition result
+         is false and in all other case it returns true.
+
+   -> XOR (^):-
+     -> XOR (^) operator will return false if and only if the result of both the boolean condition result
+        is false or true and in all other case it returns true.
+
+ -> Unary operator / increment/decrement operator:-
+    -> works on only ont data.
+    -> ++ -> increment operator always inc. value by 1.
+    -> -- -> decrement operator always dec. value by 1.
+    -> x++ post increment
+    -> ++x pre increment
+    -> x-- post decrement
+    -> --x pre decrement
+
+ -> Bitwise operator:-
+   -> Bitwise operator will perform bitwise operations on every bit of given and produce result as 0 or 1.
+   -> AND(&)
+   -> OR(|)
+   -> XOR(^)
+
+ -> Concatenation operator:-
+   -> It is used to join a String value with any other data.
+   -> Between a String and any other type if u use (+) operator it will join the string and given value creating a new string.
+       eg: "Praveen" + "Reddy"
+
+--> Methods/Functions:-
+  -> Method is a block of code which is used to perform some specific task.
+
+  Different ways of methods:-
+    -> Method without arguments without return type.
+           public static void main(String[] args) {
+              m1();
+           }
+           public static void m1(){
+               System.out.println("Hello");
+           }
+    -> Method with argument without return type.
+        public static void main(String[] args) {
+               new Thhada().m1(23,"Reddy");
+           }
+           void m1(int a, String b){
+
+               System.out.println(a+b);
+           }
+    -> Method without argument with return type.
+         public static void main(String[] args) {
+              Thhada a = new Thhada();
+
+               System.out.println(a.m1());
+           }
+          int m1(){
+             return 10;
+          }
+    -> Method with argument with return type.
+       public static void main(String[] args) {
+               Thhada a = new Thhada();
+               String name = a.name(23, "Reddy");
+               System.out.println(name);
+           }
+           String name(int age, String name){
+               return "Age is "+age+"Name is "+name;
+           }
+
+    Syntax:-
+         access specifier  access modifier  return type  name(arg list)
+         {
+            statement..
+            ...
+            ..
+         }
+    -> Method gets executed only when we call it or invoke it.
+       Syntax:- ObjectName.methodName();
+
+    -> Access Modifier:- static and non static or default.
+    -> Access Specifier:- public, protected, private, pkg-lavel(default).
+    -> Return Type:- Depends on the datatype of the value from the method.
+    -> Void:- This method doest not have any return type.
+
+    -> A method which is calling another method is called as calling method.
+    -> A method is called by another method is called as called method.
+    -> If method do not return any value then its return type should be void.
+
+   Type of method:-
+     -> Chain method call
+     -> Sequence method call
+     -> Recursion method call
+    -> Chain method call:-
+        -> One method calling another method and that method calling another method is called chain method call.
+    -> Sequence method call:-
+        -> One method is calling more than one number method is called sequence method/function.
+    -> Recursion method:-
+        -> One method is calling another method and that method is call back the same method is called recursion method.
+
+--> Flow Control Statement:-
+   -> It is used to control the execution flow of the program at the runtime.
+   Flow control statement are 2 types:-
+      -> Decision making statement
+      -> looping statement
+    -> Decision making statement:-
+      -> Decision making statement are used to execute one or group of statement based on a boolean condition.
+
+--> Types of Decision making statement are:-
+    -> if
+    -> if-else
+    -> if else-if
+    -> nested-if
+    -> switch-case
+
+  -> if-statement:-
+    -> It is a type of decision making statement where one or group of statement written with in a
+       if body will be executed if and only if result of boolean condition is true.
+       Syntax:-
+              if(condition){
+              statement..
+              ....
+              ....
+              }
+  -> if-else statement:-
+    -> Where statement of if body is executed if result of boolean condition is ture else ELSE statement executed.
+    Syntax:-
+           if(Condition){
+           statement..
+           ...
+           ...
+           }else{
+           statement..
+          ...
+          }
+  -> if-else-if statement:-
+     -> Which is used to whenever there are multiple boolean conditions to be evaluated to execute
+          different set of statement.
+      Syntax:
+           if(condition){
+             sta..
+             ..
+             ..
+             }
+             else-if(condition)
+             {
+             sta..
+             ..
+             ..
+             }  else{
+                sta..
+                ...
+                ..
+                }
+
+  -> Switch Statement:-
+     -> In switch statement you can jump to various cases based on your expression.
+     -> It is type of decision making statement used to character comparison.
+     -> Break: is a keyword which is used to transfer the control outside the currently executed block.
+      Syntax:-
+           switch(choice)
+           {
+            case choice 1: state.....
+                            break;
+            case choice 2: state.....
+                            break;
+            case choice 3: state.....
+                            break;
+            default: state....
+           }
+
+--> Looping statement:-
+   -> It is used to execute one or multiple statement repeatedly.
+   -> Used to repeat a specific task.
+   -> used to travers the data as well.
+   Different types:-
+     -> for loop
+     -> while loop
+     -> do while loop
+     -> nested for loop
+     -> for each loop
+
+   -> for loop:-
+     -> We use for loop when we know the logical start and end.
+     -> When we know how many times loop will going to run.
+
+     Syntax:
+           for(initialization; condition; updation) {
+              stmt..
+                 ..
+            }
+
+   -> while loop:-
+     -> Keeps in executing until the condition is false.
+     -> When we do not  know how many times loop will going to run.
+
+     Syntax:
+          while(boolean condition)
+          {
+             stmt...
+          }
+
+   -> do while loop:-
+     -> do while loop execute set of instruction and then check the condition.
+
+       Syntax:
+            do{
+               stme...
+              }
+              while(condition);
+
+   Difference between while loop and do while loop:-
+     while loop:-Check the condition first then execute.
+                -> If initial condition is false it won`t execute even once
+     do while loop:- execute first, then check the condition.
+                  -> It will execute atleast once/even if initial condition is false.
+
+   -> nested for loop:-
+     -> nested for loop is a combination of one for loop with in another for loop.
+     -> for one outer loop value, all the values of inner for loop get executed.
+                                     
