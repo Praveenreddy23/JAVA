@@ -1,6 +1,38 @@
                                              -:BASIC JAVA:-
+--> JDK:(JAVA DEVELOPMENT KIT)
+    -> JDK is a software which contains all the resources for developing and executing java program.
+    
+--> JRE:(JAVA RUNTIME ENVIRONMENT)
+    -> JRE is a software which provides a platform for executing java program.
 
-  -> Java is a high level programing language which is founded by JAMES GOSLING and Team,
+--> JIT:(JUST IN TIME)
+    -> JIT is responsible for converting the bytecode into muchine understandable language.
+    
+--> Class Loader:
+    -> class loader is the one who loads the class from secondary storage to the executable area.
+    
+--> Interpreter:
+    -> Is used to execute java program line by line.
+  
+--> JVM:(JAVA VERTUAL MACHINE)
+    -> JVM is the manager or implement of JRE.
+    
+  --: The memory location are categarized into follows:-
+     -> Heap Area:
+        -> All the object are stored inside heap area.
+        
+     -> Class Area/ Static Pool:
+        -> All the static properties are loaded inside static pool.
+        
+     -> Method Area:
+        -> The method implementation is always stored inside method area.
+       
+     -> Stack:
+        -> The execution of java program always happens inside the stack.
+     
+    
+
+--> Java is a high level programing language which is founded by JAMES GOSLING and Team,
      in 1990 And they released official version of java in 1995.
   -> Java is a classed based, high level, Object-Oriented programing language.
   -> First version of java(JDK 1.0) was released on the year JAN-23-1996 by 'SUN MICROSYSTEMS'
