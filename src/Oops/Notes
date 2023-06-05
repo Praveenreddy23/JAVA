@@ -1,0 +1,1130 @@
+--: OBJECT ORIENTED PROGRAMING :--
+
+--> Object:-
+       -> Object is a real world entity.
+       -> Anything which is present in the real world and have some physical existence can be terned as a object.
+         Eg: Pen, Car, Mobile, Human being, etc...
+       The property of an object generally categorized in to ways:-
+        -> state
+        -> Behaviour
+      -> State: state are the properties which is used to store some value.
+      -> Behaviour: Are the properties which is used to perform some task/action.
+      -> In programing language Object name is considered as class name, state are referred as variable
+            behaviour are referred as method/function.
+
+
+--> Class:-
+      -> class is a blueprint of an object.
+       (blueprint: class is going to indicate how the object is going to look like.
+      -> class is a platform to store variable and method.
+      -> class is a logical entity
+      -> class has to be declare using a keyword called as class itself.
+      -> class also act as a datatype.
+
+    Syntax:
+            Class className
+            {
+              variable
+              methods
+              constructor
+              blocks
+            }
+
+
+--> Static variable:-
+      -> If a variable declare using static keyword is a static variable.
+         Eg: static int a =23;
+--> Non static variable:-
+      -> a variable not declare using static keyword is a non static variable
+         Eg: int a = 23;
+
+
+--> Object creation or instantiation:-
+  -> When we have non static properties in my class if i have to allocate some memory i have always
+      create an object.
+  -> Object are always created inside memory location and that memory is called heap area.
+  -> 'new' operator is responsible for create an object
+    Syntax:
+         className object reference = new className();
+
+  --: non static properties either in the same class or another class can be access with the help of
+       object creation.
+  --: We can create any number of object for a specific class.
+
+
+--> Reference variable:-
+   -> It ia a type of variable which is used to store address of an object.
+   -> With in the reference variable we can`t store primitive values.
+   -> With in one reference variable we can store only one object class.
+   -> multiple reference variable can point to same object.
+
+
+--> Default value:-
+   -> If a variable just declared and not initialized to any value, then the compile will automatically
+       initialize a default value.
+    -: Default value are applicable for both static and non static variable.
+
+
+--> Static keyword:-
+    -> static is a keyword which is used for variable, method, block.
+    -> static properties will have one copy per class.
+    -> All the static properties are loaded into memory location called as class area or static pool.
+    -> in order to define a static variable/ static method we have to make use of static keyword.
+      Syntax: className.variableName/ className.methodName;
+
+
+--> CONSTRUCTOR:
+   -> constructor is  a set of instructions used for initialization(assigning) and instantiation(Object creation).
+   -> constructor name and class name should always be same.
+   -> Every class must and should have constructor
+   -> constructor will get executed at the time of object creation.
+   -> constructor will not have return type.
+   -> if programmer do not write any constructor then compiler will write default constructor implicitly.
+   -> constructors can not declared as static or final.
+     Syntax:
+          Access specifier className (args)
+          {
+              set of instructions
+          }
+
+   Constructor are categorized in to 2 ways:-
+     -> Default constructor
+     -> custom/user defined constructor.
+
+   -> Default constructor:
+     -> If a constructor is not present explicitly in a class then the compiler will automatically
+        generate a constructor is called default constructor.
+     -> default constructor neither accepts any args nor has any implementation.
+       Eg:
+         Class Pen
+         {
+           Pen()
+           {
+             // implicitly present/ default constructor
+           }
+          public static void main(String[] args)
+          {
+             Pen p = new Pen();
+          }
+         }
+
+
+   -> Custom/user-defined constructor:
+     -> If a constructor is explicitly defined inside a class by the programmer then we refer it as custom constr.
+    Custom constructor can categorized in to 2 ways:-
+      -> Non-parameterized constructor or no arg constructor.
+      -> parameterized constructor
+
+    Non-parameterized constructor or no arg constructor:-
+      Eg:
+                Class Pen
+                {
+                  Pen()// no arg constructor
+                  {
+                    // implicitly present/ default constructor
+                  }
+                 public static void main(String[] args)
+                 {
+                    Pen p = new Pen();
+                 }
+                }
+
+    parameterized constructor:-
+     Eg:
+                           Class Pen
+                           {
+                             Pen(String colour)
+                             {
+                              system.out.println(colour);
+                             }
+                            public static void main(String[] args)
+                            {
+                               Pen p = new Pen("Red");
+                            }
+                           }
+
+
+--> Constructor overloading:-
+   -> The process of having multiple constructor in the same class but different in
+       no.of args, datatype of arg, order or arg.
+
+--> Global or member variable and local variable:-
+   -> Global/Member variable:-
+      -> If a variable is declared with in a class directly is known as global variable.
+      -> Member variable can be access globally.
+
+   -> Local variable:-
+      -> If a variable is declared with in a specific scope/block such as method, constructor.
+      -> local variable are access only with a specific scope.
+     Global or member variable and local variable categorized in to:
+       -> static
+       -> Non-static
+
+    : When the local variable and member variable name are same always the local variable will dominate
+       when we will use this keyword.
+       Eg:
+           int height = 10;
+              void display(){
+                  int height = 12;
+                  System.out.println(height);//12
+                  System.out.println(this.height);//10
+              }
+              public static void main(String[] args) {
+                  new Thhada().display();
+              }
+
+
+--> This keyword:-
+   -> In java, we have both member variable and local variable names same. then always local variable will
+       dominating member variable/ global variable.
+   -> In order to avoid the dominating part we make use of "this" keyword.
+   -> This is a keyword which is used to point to the current object/instance.
+   Syntax:
+        this.variableName;
+
+        Eg:
+            String name;
+               int no;
+                Thhada(String name, int no){
+                    this.name = name;
+                    this.no = no;
+                }
+
+               public static void main(String[] args) {
+                   Thhada thhada = new Thhada("Reddy", 23);
+                   System.out.println(thhada.name+" "+thhada.no);
+               }
+
+
+--> METHOD:
+  -> Method is a block of code which is used to perform some specific task.
+--> METHOD OVERLOADING:-
+   -> In a class having multiple methods with the same name, but different in arg. is called method overloading.
+      arg like:
+         no.og arg
+         datatype of arg.
+         order of arg
+       Eg: println();
+   Advantages:
+     -> Used to perform some operation with different type of input.
+     -> For the same functionality when we want to provide multiple option.
+     -> Method can be overloaded with different class also.
+     -> Method overloading is also referred as compile time polymorphism.
+     Eg:
+         public void m(){
+                System.out.println("This is public method");
+            }
+            private void m(int a ){
+                System.out.println("This is private method "+a);
+            }
+            protected void m(String b){
+                System.out.println("This is protected method"+b);
+            }
+           static void m(double c){
+                System.out.println("This is default method"+c);
+            }
+            void m(int a, double b){
+                System.out.println("This different type of args");
+            }
+            void m(double b, int a){
+                System.out.println("This is order of arg");
+            }
+
+            public static void main(String[] args) {
+                Thhada.m(2.2);
+                new Thhada().m();
+                new Thhada().m(1);
+                new Thhada().m(20.20);
+                new Thhada().m("Method");
+                new Thhada().m(1.1,23);
+
+            }
+
+
+--> Scanner:-
+  -> Scanner is a pre-defined class present in java.util package.
+  -> Scanner class is used to dynamic input from the user.
+
+ Rules for using scanner class:
+   -> Create an object of scanner class.
+   -> pass system.in to the constructor call of the scanner object (to accept input).
+   Syntax:
+         Scanner scan = new Scanner(System.in);
+   -> Import Scanner class from java.util package.
+   -> MAke use of pre-defined method to accept dynamic input.
+
+ -> Important method used w.r.t Scanner class:
+   -> byte: nextByte()
+   -> short: nextShort()
+   -> int: nextInt()
+   -> long: nextLong()
+   -> float: nextFloat()
+   -> double: nextDouble()
+   -> boolean: nextBoolean()
+   -> String: next()/ nextLine()
+   -> char: next().charAt(0)
+       Eg:  "java".charAt(0)-> 'j'
+         public static void main(String[] args) {
+               Scanner scan = new Scanner(System.in);
+               System.out.println("Enter the value of a");
+               int a = scan.nextInt();
+               System.out.println("Enter the value of b");
+               int b = scan.nextInt();
+               System.out.println(a+b);
+               scan.close();
+           }
+
+
+--> BLOCKS:
+   -> Block are set of instruction/block used for initialization.
+   -> block are generally categorized into 2types:-
+      -> static block
+      -> non-static block
+     -: static block:
+        -> use for initializing static variable.
+       syntax:
+              static{
+              ....
+              ...
+              }
+       -> static block always gets executed even before main() or during class loading time.
+       -> We can have multiple static blocks and the execution will happen in a sequential manner.
+
+     -: Non-static block:
+       -> Used for initialing static variable and non-static variable.
+       Syntax:
+               {
+                 ...
+                 ...
+               }
+       -> non-static block are executed during object creation before the execution of construction.
+       -> We can have multiple non static blocks and the execution will happen in a sequential manner.
+         Eg:
+             static int a = 10;
+                static {
+                    a= 20;
+
+                }
+                public static void main(String[] args) {
+                    new Thhada();
+                    System.out.println(a);
+                }
+                {
+                    a=30;
+                }
+
+
+--> INHERITANCE:-(IS-A Relationship)
+  -> One class acquiring the properties of another class is called inheritance.
+  -> super class: a class gives or share the properties are called super/parent/base class.
+  -> sub class: a class accepts the properties are called sub/child class.
+  -> We achieve inheritance with the help of 'extends' keyword.
+  -> inheritance is also referred as is-a relationship.
+  -> Using super clas object we can access only super class properties.
+  -> Using subclass object we can access both superclass and subclass properties.
+  -> final classes can not be inherited.
+  -> final data member(variable) and function member(method) of the class can be inherited.
+  -> private data member(variable) and function member(method) of the class can not be inherited
+  -> blocks and constructor of the class can not be inherited.
+  -> Using subclass object we can access both static and non static properties of both subclass and super class.
+
+ Different types of inheritance:
+  -> Single level inheritance
+  -> Multi level inheritance
+  -> Multiple level inheritance
+  -> Hierarchical inheritance
+  -> Hybrid inheritance
+
+ -: Single level inheritance:
+   -> A combination of one superclass and one subclass is called as single level inheritance.
+     Eg:
+        public class Thhada {
+          String name ="Reddy";
+
+        }
+        class Single extends Thhada{
+          int a = 23;
+        }
+        class Main{
+          public static void main(String[] args) {
+            Single s = new Single();
+            System.out.println("Age is "+s.a+" Name is "+s.name);
+          }
+        }
+
+ -: Multi level inheritance:
+   -> A combination of multiple subclass and multiple super class in a sequential order.
+   -> subclass inheriting the properties of super class and that superclass inheriting the
+      properties of another superclass is called as multi level inheritance.
+     Eg:
+        class Thhada {
+           String name ="Reddy";
+
+        }
+          class multi extends Thhada{
+          int a = 23;
+        }
+        class Level extends multi{
+           String city = " Bidar";
+        }
+        class Main{
+          public static void main(String[] args) {
+          Level l = new Level();
+            System.out.println("Age is "+l.a+" Name is "+l.name+" City is "+l.city);
+          }
+        }
+
+ -: Multiple inheritance:
+   -> subclass inheriting the properties from two or more superclass is called multiple inheritance.
+   -> in java, do not support multiple inheritance.
+   -> Or, A combination of one subclass having multiple superclass is called multiple inheritance.
+
+
+ -: Hierarchical inheritance:
+   -> A combination of one superclass and multiple subclasses is called Hierarchical inheritance.
+   -> Or, One Super class inherited/extends by two or more subclass is called Hierarchical inheritance.
+   Eg:
+     public class Thhada {
+          String brand = "Audi";
+     }
+     class subclass1 extends Thhada{
+          String cost = "2cr";
+          void start(){
+              System.out.println("Started");
+          }
+     }
+     class subclass2 extends Thhada{
+          int gear = 6;
+          void display(){
+              System.out.println("It had "+gear+"gear");
+          }
+     }
+     class subclass3 extends Thhada{
+          String fuel = "petrol";
+          void stop(){
+              System.out.println("Stopped");
+          }
+     }
+     class Main{
+         public static void main(String[] args) {
+             subclass1 s1 = new subclass1();
+             System.out.println(s1.brand+" "+s1.cost);
+             s1.start();
+             subclass2 s2 = new subclass2();
+             System.out.println(s2.brand+" "+s2.gear);
+             s2.display();
+             subclass3 s3 = new subclass3();
+             System.out.println(s3.brand+" "+s3.fuel);
+             s3.stop();
+         }
+     }
+
+
+   -: Generalization:
+     -> Declaring a common method and variable of all subclass in one superclass
+        Eg:
+         Employee e = new Developer();/ new Hr();/ new Tester();
+
+   -: Specialization:
+     -> Declaring a method and variable specifically for one subclass.
+        Eg:
+          Developer d = new Developer();
+          Tester t = new Tester();
+          Hr h = new Hr();
+
+
+ -: Hybrid inheritance:
+   -> A combination of two or more types of inheritance.
+
+  Program on inheritance 'this keyword' and 'super keyword'?
+  --> public class Thhada {
+         int age = 21;
+     }
+     class son extends Thhada{
+          int age = 22;//member variable
+          void display(){
+              int age = 23;//local variable
+              System.out.println(age);//it is pointing to the local variable age
+              System.out.println(this.age);//it is pointing to the current object age/ member variable
+              System.out.println(super.age);//it is use to point super class
+          }
+     }
+     class Main{
+         public static void main(String[] args) {
+             son s = new son();
+             s.display();
+         }
+     }
+
+
+--> Constructor Chaining:
+   -> The process of one constructor calling another constructor is called constructor chaining.
+   -> Constructor chaining can be achieved with the help of 'this calling statement (this())'.
+   -> In order to achieve constructor chaining we have to constructor overloading as well.
+   -> this() statement should be first executable line with the constructor.
+   -> this() is used to invoke another constructor in the same class.
+   Def: It is the process of subclass constructor calling its superclass constructor and that superclass
+          constructor calling object class.
+   Eg:
+      public class Thhada {
+          Thhada(int a){
+              System.out.println("1");
+          }
+          Thhada(){
+              this(23);
+              System.out.println(2);
+          }
+
+          public static void main(String[] args) {
+              new Thhada();
+          }
+      }
+
+
+--> This calling statement: this()
+   -> It is used to call from one constructor to another constructor with in the class.
+   Rules:
+    -> This calling statement should be first statement inside the constructor.
+    -> It is used only in the case of constructor overloading.
+    -> We can develop two calling statement in a single constructor.
+    Eg:
+       public class Thhada {
+           Thhada(int age){
+               System.out.println("Age:"+age);
+           }
+           Thhada(String name){
+               this(23);
+               System.out.println("Name "+name);
+           }
+           Thhada(double height){
+               this("Reddy");
+               System.out.println("Height "+height);
+           }
+           Thhada(){
+               this(5.6);
+               System.out.println("Okey");
+           }
+
+           public static void main(String[] args) {
+               new Thhada();
+           }
+       }
+    -: This() or super() should always be the first executable line within the constructor.
+    -: Recursion chaining is not possible
+       :If there are 'n' no. of constructor we can have a maximum of 'n-1' calling statement.
+
+
+--> Super calling statement: super()
+   -> It is used to call from one constructor to another constructor between the class.
+   -> It is used in the case of inheritance.
+   Rules:
+      -> super calling statement should be the first statement inside the constructor.
+      -> super calling can be written implicitly or explicitly.
+      Implicitly:
+         Eg:
+            public class Thhada {
+               Thhada(){
+                   System.out.println("1");
+               }
+            }
+            class Son extends Thhada{
+
+                Son(){
+                //super(); -> implicitly
+                    System.out.println("2");
+                }
+            }
+            class main{
+                public static void main(String[] args) {
+                    Son s = new Son();
+                }
+            }
+      Explicitly:
+         Eg:
+           public class Thhada {
+              Thhada(int a){
+                  System.out.println("1");
+              }
+           }
+           class Son extends Thhada{
+               Son(){
+                   super(2);//Explicitly
+                   System.out.println("2");
+               }
+           }
+           class main{
+               public static void main(String[] args) {
+                   Son s = new Son();
+               }
+           }
+   -: super() can be used in 2ways:
+     -> implicitly:
+        -> When we create an object of a class, and if that class has a superclass, and if that superclass has
+           a non-parameterized constructor then the subclass constructor will invoke implicitly.
+     -> explicitly:
+        -> When we create an object of a class, and if that class has a superclass, and if that superclass has
+           a parameterized constructor then the subclass constructor will invoke explicitly otherwise
+               we get compile time error.
+
+
+--> Method Overriding:
+   -> Method overriding is a process of inheriting the method and changing the implementation/definition
+       of the inherited method.
+
+   Rules:
+     -> Method name should be same.
+     -> Arguments should be same.
+     -> Return type should be same.
+
+   -> Inheritance is mandatory for method overriding.
+   -> final, private, and static method can not be overridden.
+   -> optionally, while overriding we can make use of annotation override. @Override.
+    : override is an indicate to the programmer that this method is inherited and overridden.
+    : Override was introduced from JDK 1.5
+
+
+ -> Method Hiding:
+   -> If subclass and superclass contains static methods with same name and arguments then it is called.
+   Eg:
+     public class Thhada {
+       public static void check(){
+           System.out.println("hi");
+       }
+     }
+     class Da extends Thhada{
+         public static void check(){
+             System.out.println("hello");
+         }
+     }
+
+     class Main{
+         public static void main(String[] args) {
+             new Da().check();
+         }
+     }
+
+
+--> Super keyword:(super.)
+  -> super keyword is special in-built reference variable which is created by JVM,
+      and it will point to immediate parent class object.
+  -> super keyword is used within subclass method in order to access properties of its immediate superclass.
+   Syntax:
+         super.methodName;
+     Eg:
+       public class Thhada {
+         public  void check(){
+             System.out.println("hi");
+         }
+       }
+       class Da extends Thhada{
+           public  void check(){
+              // super.check();
+               System.out.println("hello");
+               super.check();
+           }
+       }
+       class Main{
+           public static void main(String[] args) {
+               new Da().check();
+           }
+       }
+
+
+--> Packages:
+   -> In java, package is group of class and interface which are related to one single module in the given project.
+   -> Or, package are nothing but folder or directory.
+   -> packages are used to store classes and interface.
+   -> better maintain of the program.
+
+  Package naming convention:
+   -> package name is always written in all lower case.
+   -> package names are always written in reverse order of domain.
+   Eg: www.gmail.com -> com.gmail.www
+
+  -> Data member and function member of a class present in different package can be accessed by two ways:
+    -> Using FullyQualifiedClassName -> Def: A class which is written with its package name is called.
+    -> Using import statement
+
+
+--> Access Specifier:
+   -> Access specifier are used to provide security for the classes and its member by controlling the visibility.
+
+  Types of access specifier:
+   -> public
+   -> protected
+   -> pkg-level(default)
+   -> private
+
+  -> public:
+    -> If you declare any entity as a public, then it can be accessed by the classes present in the same or different pkg.
+    -> public entities will have high visibility and low security.
+
+  -> protected:
+    -> If you declared any entity as a protected, then it can be accessed by the classes present in same pkg.
+    -> protected entity can be accessed by other class present in different pkg through inheritance and creating the
+       object of subclass only.
+
+  -> pkg-level(default)
+   -> If you declare any entity without using access specifier keyword then it is considered as default.
+   -> If you declared any entity as pkg-level(default) then it can be accessed only by the classes present in same pkg.
+
+  -> private:
+   -> If you declare any entity as private then it can be access only by the classes within they are declared.
+   -> private entity will have high security and low visibility.
+
+
+--> Concrete class:
+   -> A class which is not declared using abstract keyword is called as concrete class.
+   -> Or, If a class contain only concrete method that class is called as concrete class.
+   -> Concrete class can allow only concrete methods
+       Eg: Concrete class/ non abstract class
+          Class a
+          {
+           //concrete method
+          }
+
+--> Abstract Class:(Incomplete class)
+   -> A class which is declared using abstract keyword is called abstract class.
+   -> Abstract class can allow both abstract method and concrete method.
+   -> It is impossible to create an object of abstract class.
+   -> But, We can create reference variable of abstract class.
+    Eg:
+      abstract class A
+      {
+       //Both abstract/concrete methods
+      }
+
+--> Concrete Method:(complete method)
+   -> A method which has both declaration and implementation/ definition is called as concrete method.
+     Eg:
+        void test()// method declaration
+        {
+         //Method implementation/definition
+        }
+
+--> Abstract Method:
+   -> A method which has only declaration and no implementation is called as abstract method.
+   -> Abstract method has to be declared using abstract keyword.
+   -> Abstract method can not be private.
+   -> Abstract method can not be static.
+   -> Abstract method can not be final.
+     Syntax:
+          public abstract void test();
+
+     Rules which has to be followed when a class inherits an abstract class?
+      -> Rule 1: When a class inherits an abstract class it is mandatory to override all abstract methods.
+           Eg:
+              public abstract class Thhada {
+                  abstract void eat();
+              }
+               class Person extends Thhada{
+
+                   @Override
+                   void eat() {
+                       System.out.println("eating");
+                   }
+
+                   public static void main(String[] args) {
+                       new Person().eat();
+                   }
+               }
+      -> Rule 2: If the abstract method can not be overridden make the subclass as abstract.
+           Eg:
+             public abstract class Thhada {
+               abstract void start();
+               void shiftGears(){
+                   System.out.println("Shifting Gears");
+               }
+              }
+              abstract class car extends Thhada{
+                 abstract void stop();
+              }
+              class User extends car{
+                  @Override
+                  void start() {
+                      System.out.println("Started");
+                  }
+                  @Override
+                  void stop() {
+                      System.out.println("Stopped");
+                  }
+
+                  public static void main(String[] args) {
+                      new User().start();
+                      new User().stop();
+                      new User().shiftGears();
+                  }
+              }
+      -> Application of abstraction class:
+        -> By using abstract class we can ensure there are no missing method implementation the subclass.
+        -> final class can not be inherited.
+        -> final methods can be inherited but can not be overridden.
+        -> final variable can be inherited but can not re-initialization.
+
+   Can abstract class have constructor?:-
+    -> YES
+    Eg:
+       public abstract class Thhada {
+         Thhada(){
+             System.out.println("hello");
+         }
+        }
+        class Da extends Thhada {
+           Da(){
+               System.out.println("HI");
+           }
+
+            public static void main(String[] args) {
+                new Da();
+            }
+        }
+
+--> INTERFACE:
+   -> Interface is a java type definition which has to be declared using interface keyword.
+   -> Or, Interface is a media b/w 2system, when in one system is the client/user and another system is object with services.
+   Syntax:
+          interface interfaceName
+          {
+             variable/dataMember
+             method/functionMember
+          }
+   -> Interface can have variable,those variables are automatically public,static,final.
+   -> Interface can allow only abstract methods and those method are automatically public and abstract.
+     Eg:
+        interface Test
+        {
+          int a = 23; -> public, static, final
+          void display(); -> public, abstract
+   -> class can achieve Is-a relationship with an interface using implements keyword.
+                IS-A Reln |  CLASS    | INTERFACE
+                CLASS        extends     implements
+                INTERFACE    no-raln     extends
+   -> When a class implements an interface mandatory to override the abstract method.
+    Eg:
+       public interface  Thhada {
+         int id = 23;//public static final
+         void eat();//public abstract void eat();
+        }
+        class User implements Thhada{
+            @Override
+            public void eat() {
+                System.out.println("Eating");
+            }
+            public static void main(String[] args) {
+                System.out.println(Thhada.id);
+                new User().eat();
+            }
+        }
+
+    -> Implementation Class:
+     -> The class implements the interface is called as implementation class.
+     -> An interface can not implements another interface
+     -> AN interface should only extends another interface.
+
+     :: Notes:
+       -> A class can implements any number of interface(multiple interface)
+       -> A class can extends one class and implements any number of interface.
+       -> Interface can not contain constructor
+       -> We can not create an object of interface, But create reference variable of interface.
+       -> From JDK 8 interfaces now on supports concrete class.
+          Only buy using 2 keywords:
+            -> static -> for static method
+            -> default -> for non-static method
+
+       EG:
+          public interface  ReverseBank {
+              void deposit();
+          }
+          interface HDFC extends ReverseBank{
+              void withdraw();
+          }
+          class AccountHolder implements HDFC{
+              @Override
+              public void deposit() {
+                  System.out.println("Deposited");
+              }
+              @Override
+              public void withdraw() {
+                  System.out.println("Withdrawn");
+              }
+              public static void main(String[] args) {
+                  new AccountHolder().deposit();
+                  new AccountHolder().withdraw();
+              }
+          }
+
+     -> A class extends one class and implements any number of interface:
+       Eg:
+          public interface  A {
+              void m1();
+          }
+          interface  B{
+              void m2();
+          }
+          interface  C{
+              void m3();
+          }
+          class Person{
+              void eat(){
+                  System.out.println("Eating");
+              }
+          }
+          class Main extends Person implements A,B,C{
+              @Override
+              public void m1() {
+                  System.out.println("m1");
+              }
+              @Override
+              public void m2() {
+                  System.out.println("m2");
+              }
+              @Override
+              public void m3() {
+                  System.out.println("m3");
+              }
+              public static void main(String[] args) {
+                  Main m = new Main();
+                  m.m1();
+                  m.m2();m.m3();m.eat();
+              }
+          }
+
+--> Type Casting:
+   -> Converting one type data to another type data called type casting.
+   Type of casting:-
+    1) Primitive casting
+    2) Derived casting
+   1) Primitive casting:-
+     -> Converting one primitive data type value to another primitive data type value is called primitive casting.
+    Types of Primitive casting:
+     -> Widening
+     -> Narrowing
+    -> Widening:-(implicitly)
+      -> Converting from smaller primitive data type to any of its Bigger primitive data type is called widening.
+      -> Or, Converting lower data type value to higher type data.
+      -> Widening is done by implicitly by the compiler.
+       byte -> short -> int -> long -> float -> double
+       Eg:
+         byte a = 1; // a = 1
+         float b = a;//b = 1.0
+    -> Narrowing:-
+      -> Converting from bigger primitive data type value to any of its smaller primitive data type
+           is called narrowing type casting.
+      -> Or, converting higher data type value to lower data type value
+      -> Narrowing should be done explicitly by the programmer.
+      Syntax: (dataType) val/var;
+       double -> float -> long -> int -> short -> byte
+        Eg:
+          double a = 2.3;// a = 2.3
+          int b = (int) a;// b = 2
+       Examples:
+          public class Thhada{
+              public static void main(String[] args) {
+                  System.out.println("Widening/implicitly");
+                  int a = 10;
+                  double b = a;
+                  System.out.println(a+" "+b);
+                  char c = 'p';
+                  int d = c;
+                  System.out.println(c+" "+d);
+                  System.out.println("-------------------------");
+
+                  System.out.println("Narrowing/explicitly");
+                  double x = 2.3;
+                  int y = (int) x;
+                  System.out.println(x+" "y);
+                  int p = 66;
+                  char q = (char) p;
+                  System.out.println(p+" "+q);
+              }
+          }
+   2) Derived Casting:
+    -> Converting one object reference type to another object reference type is called derived casting.
+    Types of derived casting:
+    -> up casting
+    -> down casting
+
+   -> Up Casting:
+     -> Creating an object of subclass and storing its address into reference of type superclass.
+    * Upcasted reference:
+     -> Any superclass reference pointing to subclass object is called as upcasted reference.
+     -> With upcasted reference we can access only superclass member/properties.
+     -> In order to achieve upcasting IS-A relationship mandatory.
+     -> upcasting will have implicitly/automatically.
+     -> Superclass reference, Subclass object.
+       Syntax:
+               superclass reference = subclass object
+
+   -> Down Casting:
+     -> The process of converting the upcasted object reference back to subclass object reference is called down casting.
+     -> Using an down casted reference we can access properties of superclass and subclass.
+     -> down casting has to be done explicitly.
+     -> In order to achieve down casting, upcasting mandatory.
+    * Inheritance is mandatory for derived casting.
+     Syntax:
+          superclass reference = subclass object
+          Eg:
+            Upcasting:
+             Father f = new Son();
+                   or
+             Son s = new Son();
+              Father f = s;
+            Down casting:
+             Son s = (Son) f;
+          Example:
+             public abstract class Thhada{
+                String brand = "BMW";
+                void start(){
+                    System.out.println("Started");
+                }
+             }
+             class Car extends Thhada{
+                 String fuel ="Petrol";
+                 void stop(){
+                     System.out.println("Stopped");
+                 }
+             }
+             class Main{
+                 public static void main(String[] args) {
+                     Thhada t = new Car();
+                     System.out.println(t.brand);
+                     t.start();
+
+                     Car c =  (Car) t;
+                     System.out.println(c.brand+" "+c.fuel);
+                     c.start();
+                     c.stop();
+                 }
+             }
+
+ --> Why do we get ClassCastException:
+   -> If a object has been upcasted we have to downcast to same type else get an ClassCastException.
+   -> We also get ClassCastException when we down cast without upcasting.
+   -> In order to avoid ClassCastException we make use of instanceOf operator.
+
+--> InstanceOf Operator:
+   -> instanceOf is an operator in order to check if an object is an instance of a specific class type or not.
+   -> Or, instanceOf operator compares given object reference with the given class,
+           return true if it contain the given class properties else returns false.
+
+
+--> POLYMORPHISM:(Many Forms)
+   -> One entity showing different behaviour at different places is called polymorphism.
+   -> In java, The ability of a method to behave differently when different object are acting upon it.
+  Types of polymorphism:-
+   1) Compile Time Polymorphism
+   2) Run Time Polymorphism
+
+  1) Compile Time Polymorphism:
+    * Method Binding:
+      -> Method binding is a process of associating or mapping method caller to its method implementation is called
+          method binding.
+    -> Binding the method declaration to method implementation/definition by the compiler at the compile time
+       based on the arguments is called as compile time polymorphism.
+    -> Compile time polymorphism is achieved with the help of method overloading
+    -> compile time polymorphism is also referred as early binding or static binding.
+    -> Since the binding is done before the execution it is called as Early binding.
+    -> Once the binding is done it can not be changed at the runtime is called static binding.
+    -> Method binding is happening at compile time, Hence we called method overloading/Early binding/ static binding
+         or compile time polymorphism.
+    -> Method overloading is the best example for compile time polymorphism.
+
+  2) Run Time Polymorphism:
+    -> Can be achieved with the help of -> IS-A Relationship -> Method Overriding -> UpCasting
+    -> Binding the method declaration to method implementation by the JVM at the runtime based on the objects
+       is called runtime polymorphism.
+    -> Since the binding is done during the execution it is called as late binding.
+    -> Once the binding is done it can be changed at the runtime and hence it is called dynamic binding.
+    -> The decision of which method has to get executed is taken by JVM at runtime.
+    -> Method Overriding is the best example for runtime polymorphism.
+
+
+--> Abstraction:
+   * Abstraction -> Hiding
+   * Abstract -> incomplete
+   -> The process of hiding the implementation details and showing only the functionalities(behaviours) to the user
+       with the help of abstract class or interface is called as abstraction.
+   Abstraction can be achieved by :
+     -> IS-A Relationship
+     -> Method Overriding
+     -> UpCasting
+
+   -> Abstraction is achieved by Creating 3 layers:
+    -> Object implementation layer
+    -> Object Creation layer
+    -> Object utilization
+
+    * Abstraction using factory design pattern:
+    Rules:
+     -> Generalization all the behaviours of implementation class and store it into an interface
+     -> Create an object of implementation classes and store its address into interface reference variable.
+     -> Use the interface variable reference variable in order to access the method of the implementation class.
+   EG:
+     public  interface Thhada{
+         void deposit (int amount);
+         void withdraw(int amount);
+         void checkBalance();
+     }
+     class ATM implements Thhada {
+         int balance = 5000;
+         @Override
+         public void deposit(int amount) {
+             System.out.println("Depositing amount: "+amount);
+             balance += amount;
+             System.out.println("Deposited Successfully!!!");
+         }
+
+         @Override
+         public void withdraw(int amount) {
+             System.out.println("Withdrawing amount: "+amount);
+             balance -= amount;
+             System.out.println("Withdrawn successfully!!!");
+         }
+
+         @Override
+         public void checkBalance() {
+             System.out.println(balance);
+         }
+     }
+     class Main{
+         public static void main(String[] args) {
+
+             Thhada t = new ATM();
+             t.checkBalance();
+             t.deposit(2000);
+             t.withdraw(7000);
+         }
+     }
+
+--> Encapsulation:
+   -> Declaring data member(variable) as private and grant the access through getter and setter methods is called
+        encapsulation.
+   -> getter method returns the current value of the data member.
+   -> return type of getter method depends on the data type of the data member whos value will be returned.
+   -> setter method updates the value of the data member.
+   -> return type of setter method will be usually void because it does not return any value.
+   -> Encapsulation is used to provide security for data member against the invalid value.
+     Eg: In ATM -> a pin, net banking password and provide security and provide access to particular person.
+
+   -> Encapsulation is a process of binding data member with its related member function in a single entity called as class.
+   -> The best example for encapsulation is java bean class.
+
+  *Specification for creating JAVA BEAN CLASS:
+   -> Create a public non abstract class
+   -> Declare private data member(Variable)
+   -> define public setter and getter methods.
+   -> Class has to implements serializable interface.
+   -> class should have public non parameterized constructor.
+
+
+
+
+
+
+
+
+
+
+
+
+
